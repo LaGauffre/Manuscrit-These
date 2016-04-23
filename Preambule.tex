@@ -1,0 +1,385 @@
+%% Copyright (C) 2014 Dorian Depriester
+%% http://blog.dorian-depriester.fr
+%%
+%% This file may be distributed and/or modified under the conditions
+%% of the LaTeX Project Public License, either version 1.3c of this
+%% license or (at your option) any later version. The latest version
+%% of this license is in:
+%%
+%%    http://www.latex-project.org/lppl.txt
+%%
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2006/05/20 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is Dorian Depriester
+%% <contact [at] dorian [-] depriester [dot] fr>.
+%%
+%% This is Preambule.tex for French PhD Thesis.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Liste des packages         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Faux texte, juste pour la démo
+\usepackage{blindtext}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Réglage des fontes et typo    
+\usepackage[utf8]{inputenc}		% LaTeX, comprend les accents !
+\usepackage[T1]{fontenc}
+
+\usepackage[square,sort&compress,sectionbib]{natbib}		% Doit être chargé avant babel
+\usepackage{chapterbib}
+	\renewcommand{\bibsection}{\section{Références}}		% Met les références biblio dans un \section (au lieu de \section*)
+		
+\usepackage[frenchb]{babel}
+\usepackage{lmodern}
+\usepackage{ae,aecompl}										% Utilisation des fontes vectorielles modernes
+\usepackage[upright]{fourier}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Apparence globale             
+\usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2.5cm,
+			headheight=15pt]{geometry} 
+\usepackage{fancyhdr}			% Entête et pieds de page
+	\pagestyle{fancy}			% Indique que le style de la page sera justement fancy
+	\lfoot[\thepage]{} %gauche du pied de page
+	\cfoot{} %milieu du pied de page
+	\rfoot[]{\thepage} %droite du pied de page
+	\fancyhead[RO, LE] {}	
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[section]{placeins}	% Place un FloatBarrier à chaque nouvelle section
+\usepackage{epigraph}
+\usepackage[font={small}]{caption}
+\usepackage[francais]{minitoc}		% Mini table des matières, en français
+	\setcounter{minitocdepth}{2}	% Mini-toc détaillées (sections/sous-sections)
+\usepackage{pdflscape}				% Permet d'utiliser des pages au format paysage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Maths                         
+\usepackage{amsmath}			% Permet de taper des formules mathématiques
+\usepackage{amssymb}			% Permet d'utiliser des symboles mathématiques
+\usepackage{amsfonts}			% Permet d'utiliser des polices mathématiques
+\usepackage{nicefrac}
+\usepackage{upgreek}			% For roman (i.e. upright) lowercase Greek characters
+\usepackage{multicol,multirow,vmargin,cancel,lastpage,fancyhdr,pst-all}% module de symboles math\`{e}matiques ou non
+\usepackage{amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Tableaux
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+	\appto\TPTnoteSettings{\footnotesize}
+\addto\captionsfrench{\def\tablename{{\textsc{Tableau}}}}	% Renome 'table' en 'tableau'
+
+            
+            
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graphiques                    
+\usepackage{graphicx}			% Permet l'inclusion d'images
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{rotating}
+\usepackage{pgfplots}
+	\usepgfplotslibrary{groupplots}
+\usepackage{tikz}
+	\usetikzlibrary{backgrounds,automata}
+	\pgfplotsset{width=7cm,compat=1.3}
+	\tikzset{every picture/.style={execute at begin picture={
+   		\shorthandoff{:;!?};}
+	}}
+	\pgfplotsset{every linear axis/.append style={
+		/pgf/number format/.cd,
+		use comma,
+		1000 sep={\,},
+	}}
+\usepackage{eso-pic}
+\usepackage{import}
+\usepackage{cclicenses}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Biblio                        
+\makeatletter
+\patchcmd{\BR@backref}{\newblock}{\newblock(page~}{}{}	% Pour les back-references, affiche 'page' au lieu de 'p.'
+\patchcmd{\BR@backref}{\par}{)\par}{}{}
+\makeatother
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Navigation dans le document   
+\usepackage[pdftex,pdfborder={0 0 0},
+			colorlinks=true,
+			linkcolor=blue,
+			citecolor=red,
+			pagebackref=true,
+			]{hyperref} %Créera automatiquement les liens internes au PDF
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Mise en forme du texte        
+\usepackage{xspace}
+\usepackage[load-configurations = abbreviations]{siunitx}
+	\DeclareSIUnit{\MPa}{\mega\pascal}
+	\DeclareSIUnit{\micron}{\micro\meter}
+	\DeclareSIUnit{\tr}{tr}
+	\DeclareSIPostPower\totheM{m}
+	\sisetup{
+	locale = FR,
+	  inter-unit-separator=$\cdot$,
+	  range-phrase=~\`{a}~,     	% Utilise le tiret court pour dire "de... à"
+	  range-units=single,  			% Cache l'unité sur la première borne
+	  }
+%\usepackage{chemist}
+\usepackage[version=3]{mhchem}
+\usepackage{textcomp}
+\usepackage{numprint}
+\usepackage{array}
+\usepackage[acronym,xindy,toc,numberedsection]{glossaries}
+	\newglossary[nlg]{notation}{not}{ntn}{Notation} 	% Création d'un type de glossaire 'notation'
+	\makeglossaries
+	\loadglsentries{Glossaire}							% Utilisation d'un fichier externe pour la définition des entrées (Glossaire.tex)
+\usepackage{hyphenat}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compilation
+
+\usepackage{silence}
+%
+%% Virer les erreur dues à minitoc
+\WarningFilter{minitoc(hints)}{W0023}
+\WarningFilter{minitoc(hints)}{W0024}
+\WarningFilter{minitoc(hints)}{W0028}
+\WarningFilter{minitoc(hints)}{W0030}
+
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Page de garde              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\@ecole{école}
+\newcommand{\ecole}[1]{
+  \def\@ecole{#1}
+}
+
+\def\@specialite{Spécialité}
+\newcommand{\specialite}[1]{
+  \def\@specialite{#1}
+}
+
+\def\@directeur{directeur}
+\newcommand{\directeur}[1]{
+  \def\@directeur{#1}
+}
+
+\def\@encadrant{encadrant}
+\newcommand{\encadrant}[1]{
+  \def\@encadrant{#1}
+}
+
+\def\@supervisor{supervisor}
+\newcommand{\supervisor}[1]{
+  \def\@supervisor{#1}
+}
+\def\@jurya{}{}{}
+\newcommand{\jurya}[3]{
+  \def\@jurya{#1,	& #2	& #3\\}
+}
+\def\@juryb{}{}{}
+\newcommand{\juryb}[3]{
+  \def\@juryb{#1,	& #2	& #3\\}
+}
+\def\@juryc{}{}{}
+\newcommand{\juryc}[3]{
+  \def\@juryc{#1,	& #2	& #3\\}
+}
+\def\@juryd{}{}{}
+\newcommand{\juryd}[3]{
+  \def\@juryd{#1,	& #2	& #3\\}
+}
+\def\@jurye{}{}{}
+\newcommand{\jurye}[3]{
+  \def\@jurye{#1,	& #2	& #3\\}
+}
+\def\@juryf{}{}{}
+\newcommand{\juryf}[3]{
+  \def\@juryf{#1,	& #2	& #3\\}
+}
+\def\@juryg{}{}{}
+\newcommand{\juryg}[3]{
+  \def\@juryg{#1,	& #2	& #3\\}
+}
+\def\@juryh{}{}{}
+\newcommand{\juryh}[3]{
+  \def\@juryh{#1,	& #2	& #3\\}
+}
+\def\@juryi{}{}{}
+\newcommand{\juryi}[3]{
+  \def\@juryi{#1,	& #2	& #3\\}
+}
+\makeatother
+
+\newcommand\BackgroundPic{%
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\includegraphics[height=0.45\paperheight]{bordure.png}%
+			\vfill
+		}
+	}
+}
+\newcommand\EtiquetteThese{%
+	\put(0,0){%
+		\parbox[t][\paperheight]{\paperwidth}{%
+			\hfill
+			\colorbox{blue}{		
+				\begin{minipage}[b]{3em}
+					\centering\Huge\textcolor{white}{T\\H\\E\\S\\E\\}
+					\vspace{0.2cm}
+				\end{minipage}
+			}
+		}
+	}
+}
+
+\makeatletter
+\newcommand{\pagedegarde}{
+%\newgeometry{top=2.5cm, bottom=2cm, left=4cm, right=1cm}
+%\AddToShipoutPicture*{\BackgroundPic}
+%\AddToShipoutPicture*{\EtiquetteThese}
+  \begin{titlepage}
+\begin{center}
+	\begin{minipage}[c]{0.70\linewidth}
+		\raggedright \includegraphics[height=1.5cm]{logo_amu}\quad\includegraphics[height=1.5cm]{logo-ISFA}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.30\linewidth}
+		\raggedleft \includegraphics[height=1cm]{axa-fund-corpo}
+	\end{minipage}\hfill 
+\end{center}
+\begin{flushleft}
+	\vspace{0.2cm}
+	\LARGE Institut de Mathématiques de Marseille\\
+	\LARGE\textcolor{black!50}{Institut des Sciences Financières et d\rq{}Assurance}\\
+	%\vspace{0.2cm}
+	\Large ED 184: Ecole doctorale en Mathématiques et Informatique de Marseille\\
+	\vspace{0.2cm}
+
+%	LABORATOIRE/UNITE DE RECHERCHE\\
+\begin{center}
+         \vspace{0.5cm}
+        \Huge\color[rgb]{0,0,1} \bfseries Approximations polynomiales de densités de probabilité et applications en assurance
+\vspace{0.5cm}
+ \end{center}
+    \begin{center}
+		\LARGE THESE DE DOCTORAT
+    \end{center}
+	\vspace{0.5cm}
+%    Spécialité : indiquer la spécialité s'il y a lieu (intitulés en annexe)\\
+    \begin{center}
+	\normalsize présentée par\\
+        \huge\bfseries Pierre-Olivier Goffard
+\vspace{0.5cm}
+\end{center}
+\begin{center}
+	\normalsize pour obtenir le grade de \\
+        \Large Docteur de l\rq{}université d\rq{}Aix-Marseille\\
+\vspace{0.2cm}
+\normalsize Discipline : Mathématiques appliquées
+
+\end{center}
+\vspace{1cm}
+    \normalsize Soutenue le 29/06/2015 devant le jury :\\
+\end{flushleft}
+\vspace{0.2cm}
+\begin{tabular}{lll}
+    \vspace{0.08cm}
+	Claude Lefèvre & Professeur à l\rq{}université libre de Bruxelles & Rapporteur \\
+    \vspace{0.08cm}
+	Partice Bertail &  Professeur à l\rq{}université Paris X  & Rapporteur \\
+    \vspace{0.08cm}
+	Dominique Henriet & Professeur à l\rq{}école Centrale Marseille & Examinateur \\
+    \vspace{0.08cm}
+	Xavier Guerrault & Actuaire chez Axa France & Responsable entreprise \\
+    \vspace{0.08cm}
+	Denys Pommeret & Professeur à l\rq{}université d\rq{}Aix-Marseille & Directeur de thèse \\
+\vspace{0.08cm}
+	Stéphane Loisel & Professeur à l\rq{}université de Lyon 1 & Co-directeur de thèse \\
+\end{tabular}
+%  \centering
+%      \includegraphics[width=0.4\textwidth]{logoAMU.png}
+%      \hfill
+%      \includegraphics[width=0.4\textwidth]{axa-fund-corpo.png}\\
+%    \vspace{1cm}
+%      {\Large ED \no 184 : \'{E}cole doctorale en Mathématiques et Informatique de Marseille}\\
+%    \vspace{1cm}
+%      {\huge 
+%      	{\bfseries Thèse de Doctorat}}\\
+%    \vspace{1cm}
+%   		{\bfseries pour obtenir le grade de docteur délivré par}\\
+%    \vspace{1cm}
+%    	{\huge\bfseries \@ecole}\\
+%    \vspace{0.5cm}
+%    	{\Large{\bfseries Spécialité ``\@specialite''}}\\
+%    \vspace{0.5cm}
+%    	\textit{présentée et soutenue publiquement par}\\
+%    \vspace{0.5cm}
+%    	{\Large {\bfseries \@author}} \\
+%    \vspace{0.5cm}
+%    	le \@date \\
+%    \vfill
+%       {\LARGE \color[rgb]{0,0,1} \bfseries{\@title}} \\
+%    \vfill
+%        Directeur de thèse : {\bfseries \@directeur}\\
+%        Co-encadrant de thèse : {\bfseries \@encadrant}\\
+%	Responsable entreprise :  {\bfseries \@supervisor}\\
+%    \vfill
+%	\begin{tabular}{>{\bfseries}llr}
+%		\large Jury\\
+%		\@jurya
+%		\@juryb
+%		\@juryc
+%		\@juryd
+%		\@jurye
+%		\@juryf
+%		\@juryg
+%		\@juryh
+%		\@juryi
+%	\end{tabular}
+%	\vfill
+%	
+%	\textbf{Université d\rq{}Aix-Marseille\\
+%	Institut de Mathématiques de Marseille, I2M}\\
+%	UMR CNRS 7635, F-06904 Sophia Antipolis, France
+  \end{titlepage}
+
+
+
+
+%\restoregeometry  
+  
+  
+}
+\makeatother

@@ -1,0 +1,321 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[     10710,        320]
+NotebookOptionsPosition[     10146,        294]
+NotebookOutlinePosition[     10500,        310]
+CellTagsIndexPosition[     10457,        307]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Approximation", " ", "de", " ", "la", " ", "probabilit\[EAcute]", " ", 
+    RowBox[{"d", "'"}], "une", " ", "binomiale", " ", "negative", " ", 
+    "compos\[EAcute]e"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Developpement", " ", "de", " ", "densit\[EAcute]", " ", "de", " ", 
+    "probabilit\[EAcute]", " ", "bivari\[EAcute]e"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "La", " ", "mesure", " ", "de", " ", "r\[EAcute]f\[EAcute]rence", " ", 
+    "choisi", " ", "est", " ", "la", " ", "loi", " ", "Gamma", " ", "de", " ",
+     "param\[EGrave]tre", " ", "\[Xi]", " ", "et", " ", "\[Nu]"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"muGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x", ",", "m", ",", "r"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "/", "m"}], ")"}], "^", 
+         RowBox[{"(", "r", ")"}]}], "*", 
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "x"}], "/", "m"}], "]"}], "*", 
+        RowBox[{
+         RowBox[{"x", "^", 
+          RowBox[{"(", 
+           RowBox[{"r", "-", "1"}], ")"}]}], "/", 
+         RowBox[{"Gamma", "[", "r", "]"}]}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Polyn\[OHat]me", " ", "mu", " ", "orthogonaux", " ", "associ\[EAcute]"}],
+     "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"QnGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"n", ",", "x", ",", "m", ",", "r"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"-", "1"}], ")"}], "^", "n"}], "*", 
+        RowBox[{
+         RowBox[{"LaguerreL", "[", 
+          RowBox[{"n", ",", 
+           RowBox[{"r", "-", "1"}], ",", 
+           RowBox[{"x", "/", "m"}]}], "]"}], "/", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"Binomial", "[", 
+           RowBox[{
+            RowBox[{"n", "+", "r", "-", "1"}], ",", "n"}], "]"}], "]"}]}]}]}],
+       "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Loi", " ", "binomial", " ", "negative", " ", "de", " ", 
+     "param\[EGrave]tre", " ", "a", " ", "et", " ", "p"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"FoncGenBinomialNeg", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"s", ",", "\[Alpha]", ",", "p"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"1", "-", "p"}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{"p", "*", "s"}]}], ")"}]}], ")"}], "^", 
+         RowBox[{"(", "\[Alpha]", ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "-", "p"}], ")"}], "^", 
+         RowBox[{"(", "\[Alpha]", ")"}]}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Transform\[EAcute]e", " ", "e", " ", "Laplace", " ", "gamma", " ", 
+     "Distribution"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"LaplaceGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"s", ",", "\[Alpha]", ",", "\[Beta]"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", 
+            RowBox[{"\[Beta]", "*", "s"}]}], ")"}]}], ")"}], "^", 
+        "\[Alpha]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"LaplaceNegativeBinomialCompoundGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "s", ",", "\[Alpha]NB", ",", "p", ",", "\[Alpha]Gamma", ",", 
+         "\[Beta]"}], "}"}], ",", 
+       RowBox[{"FoncGenBinomialNeg", "[", 
+        RowBox[{
+         RowBox[{"LaplaceGamma", "[", 
+          RowBox[{"s", ",", "\[Alpha]Gamma", ",", "\[Beta]"}], "]"}], ",", 
+         "\[Alpha]NB", ",", "p"}], "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"CoefGenFunctionNegativeBinomialGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "\[Alpha]NB", ",", "p", ",", "\[Alpha]Gamma", ",", "\[Beta]", ",", 
+         "z", ",", "m", ",", "r"}], "}"}], ",", 
+       RowBox[{"FullSimplify", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "-", "z"}], ")"}], "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "r"}], ")"}]}], "*", 
+         RowBox[{"LaplaceNegativeBinomialCompoundGamma", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"z", "/", "m"}], "/", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "z"}], ")"}]}], ",", "\[Alpha]NB", ",", "p", 
+           ",", "\[Alpha]Gamma", ",", "\[Beta]"}], "]"}]}], "]"}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ExpansionCoefficientNegativeBinomialCompoundGamma", "=", 
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "\[Alpha]NB", ",", "p", ",", "\[Alpha]Gamma", ",", "\[Beta]", 
+         StyleBox[",",
+          FontWeight->"Plain"], 
+         StyleBox["z",
+          FontWeight->"Plain"], 
+         StyleBox[",",
+          FontWeight->"Plain"], 
+         StyleBox["m",
+          FontWeight->"Plain"], 
+         StyleBox[",",
+          FontWeight->"Plain"], 
+         StyleBox["r",
+          FontWeight->"Plain"], 
+         StyleBox[",",
+          FontWeight->"Plain"], 
+         StyleBox["K",
+          FontWeight->"Plain"]}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"Expansion", "=", 
+         RowBox[{"Normal", "[", 
+          RowBox[{"Series", "[", 
+           RowBox[{
+            RowBox[{"CoefGenFunctionUltimateRuinProbabilityGamma", "[", 
+             RowBox[{
+             "\[Alpha]NB", ",", "p", ",", "\[Alpha]Gamma", ",", "\[Beta]", 
+              ",", "z", ",", "m", ",", "r"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"z", ",", "0", ",", "K"}], "}"}]}], "]"}], "]"}]}], ";", 
+        
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"-", "1"}], ")"}], "^", 
+              RowBox[{"(", "i", ")"}]}], "/", 
+             RowBox[{"(", 
+              RowBox[{"i", "!"}], ")"}]}], "/", 
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"Binomial", "[", 
+              RowBox[{
+               RowBox[{"i", "+", "r", "-", "1"}], ",", "i"}], "]"}], "]"}]}], 
+           "*", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"D", "[", 
+              RowBox[{"Expansion", ",", 
+               RowBox[{"{", 
+                RowBox[{"z", ",", "i"}], "}"}]}], "]"}], "/.", 
+             RowBox[{"z", "\[Rule]", "0"}]}], ")"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "0", ",", "K"}], "}"}]}], "]"}]}]}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.63514294505551*^9, 3.635143015949498*^9}, {
+  3.635143051206891*^9, 3.635143055442646*^9}, {3.635143155244911*^9, 
+  3.63514323131747*^9}, {3.635143342785247*^9, 3.635143366846733*^9}, {
+  3.635144002065943*^9, 3.6351441327785063`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Param\[EGrave]tre", " ", "de", " ", "la", " ", "loi", " ", "binomiale", 
+    " ", "negative", " ", "compos\[EAcute]", " ", "gamme"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Alpha]NB", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"p", "=", 
+     RowBox[{"1", "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Alpha]Gamma", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Beta]", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Clear", "[", "\[Alpha]NB", "]"}], "*)"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"Clear", "[", "p", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Clear", "[", "\[Beta]", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"CoefGenFunctionNegativeBinomialGamma", "[", 
+    RowBox[{
+    "\[Alpha]NB", ",", "p", ",", "\[Alpha]Gamma", ",", "\[Beta]", ",", "z", 
+     ",", "m", ",", "r"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.635144134992077*^9, 3.635144242293083*^9}, {
+  3.635144278494334*^9, 3.635144319108716*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"m", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "p"}], ")"}], " ", "p", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "-", "z"}], ")"}], 
+    RowBox[{"-", "r"}]], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "z"}], ")"}]}], 
+  RowBox[{
+   RowBox[{"m", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "p"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", "z"}], ")"}]}], "+", 
+   RowBox[{"z", " ", "\[Beta]"}]}]]], "Output",
+ CellChangeTimes->{3.635144286928767*^9, 3.6351443198250303`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Param\[EGrave]tre", " ", "de", " ", "la", " ", "mesure", " ", "de", " ", 
+    "r\[EAcute]f\[EAcute]rence"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"r", "=", "\[Alpha]NB"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"\[Beta]", "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", "p"}], ")"}]}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.6351442449527473`*^9, 3.635144265685367*^9}, {
+  3.635144330036215*^9, 3.635144341468196*^9}, {3.635144424362915*^9, 
+  3.635144429637822*^9}}]
+},
+WindowSize->{740, 755},
+WindowMargins->{{Automatic, 9}, {Automatic, 5}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[400, 13, 7386, 207, 454, "Input"],
+Cell[CellGroupData[{
+Cell[7811, 224, 1116, 27, 165, "Input"],
+Cell[8930, 253, 593, 20, 51, "Output"]
+}, Open  ]],
+Cell[9538, 276, 604, 16, 63, "Input"]
+}
+]
+*)
+

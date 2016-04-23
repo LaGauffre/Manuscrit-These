@@ -1,0 +1,58 @@
+\select@language {french}
+\gdef \the@ipfilectr {@-1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Les distributions compos\IeC {\'e}es et la th\IeC {\'e}orie de la ruine}{7}{chapter.1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Approximation de la densit\IeC {\'e} de probabilit\IeC {\'e} via une repr\IeC {\'e}sentation polynomiale}{39}{chapter.2}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Approximations de la \gls {fds} d'une loi $\left (\mathcal {P}(4),\Gamma (1,4)\right )$ par la m\IeC {\'e}thode d'approximation polynomiale}}{64}{table.caption.22}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Erreur relative ($\%$) sur la \gls {fds} d'une loi $\left (\mathcal {P}(4),\Gamma (1,2)\right )$ associ\IeC {\'e}e \IeC {\`a} la m\IeC {\'e}thode d'approximation polynomiale}}{64}{table.caption.23}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Approximations de la \gls {fds} d'une loi $\left (\mathcal {P}(4),\Gamma (1,2)\right )$}}{66}{table.caption.25}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Erreur relative ($\%$) sur la \gls {fds} d'une loi $\left (\mathcal {P}(4),\Gamma (1,2)\right )$}}{67}{table.caption.26}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Calcul de la prime \textit {stop-loss} pour une loi $\left (\mathcal {P}(4),\Gamma (1,1/2)\right )$}}{68}{table.caption.28}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Approximations polynomiales de la \gls {fds} d'une loi $\left (\mathcal {P}(2),\Gamma (3,1)\right )$}}{71}{table.caption.31}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Erreur relative ($\%$) sur la \gls {fds} d'une loi $\left (\mathcal {P}(2),\Gamma (3,1)\right )$ associ\IeC {\'e}e \IeC {\`a} la m\IeC {\'e}thode d'approximation polynomiale}}{71}{table.caption.32}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Approximations de la \gls {fds} d'une loi $\left (\mathcal {P}(2),\Gamma (3,1)\right )$ via diff\IeC {\'e}rentes m\IeC {\'e}thodes}}{73}{table.caption.34}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Erreur relative ($\%$) li\IeC {\'e}e \IeC {\`a} l'{}approximation de la \gls {fds} d'une loi $\left (\mathcal {P}(2),\Gamma (3,1)\right )$}}{73}{table.caption.35}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Calcul de la prime \textit {stop-loss} pour une loi $\left (\mathcal {P}(2),\Gamma (3,1)\right )$}}{73}{table.caption.37}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Approximations polynomiales de la \gls {fds} d'une loi $\left (\mathcal {P}(4),\mathcal {U}(0,10)\right )$}}{76}{table.caption.39}
+\contentsline {table}{\numberline {2.12}{\ignorespaces Erreur relative ($\%$) sur la \gls {fds} d'une loi $\left (\mathcal {P}(4),\mathcal {U}(0,10)\right )$ associ\IeC {\'e}e \IeC {\`a} la m\IeC {\'e}thode d'approximation polynomiale}}{77}{table.caption.40}
+\contentsline {table}{\numberline {2.13}{\ignorespaces Approximations de la \gls {fds} d'une loi $\left (\mathcal {P}(4),\mathcal {U}(0,10)\right )$}}{77}{table.caption.42}
+\contentsline {table}{\numberline {2.14}{\ignorespaces Erreur relative ($\%$) sur la \gls {fds} d'une loi $\left (\mathcal {P}(4),\mathcal {U}(0,10)\right )$}}{78}{table.caption.43}
+\contentsline {table}{\numberline {2.15}{\ignorespaces Calcul de la prime \textit {stop-loss} pour une loi $\left (\mathcal {P}(4),\mathcal {U}(0,10)\right )$}}{80}{table.caption.45}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{A polynomial expansion to approximate ruin probability in the compound Poisson ruin model}{93}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Probabilities of ultimate ruin approximated via the Fourier series method, the polynomial expansion and the scaled Laplace transform inversion when the claim amounts are $\Gamma (2,1)$-distributed.\relax }}{109}{table.caption.51}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Probabilities of ultimate ruin approximated via the Fourier series method, the polynomial expansion and the scaled Laplace transform inversion when the claim amounts are $\Gamma (3,1)$-distributed.\relax }}{109}{table.caption.53}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Probabilities of ultimate ruin approximated via the Fourier series method, the polynomial expansion and the scaled Laplace transform inversion when the claim amounts are $U\left [0,100\right ]$-distributed.\relax }}{111}{table.caption.55}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Polynomial approximations for bivariate aggregate claims amount probability distributions}{115}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Survival function of the reinsurance cost obtained by polynomial expansion and Monte-Carlo simultions\relax }}{136}{table.caption.68}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Is it optimal to group policyholders by age, gender, and seniority for BEL computations based on model points?}{139}{chapter.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Number of policies and amount of the initial surrender value of the portfolio\relax }}{148}{table.caption.71}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Statistical description of the variable AGE in the portfolio\relax }}{148}{table.caption.72}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Statistical description of the variable SENIORITY in the portfolio\relax }}{148}{table.caption.73}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Number of MP and best estimate liability of the aggregated portfolio\relax }}{149}{table.caption.74}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Best estimate liabilities error with $28$ model points depending on the aggregation method\relax }}{149}{table.caption.75}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Best estimate liabilities error with 3 model points depending on the aggregation method\relax }}{151}{table.caption.78}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-9}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-10}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\gdef \the@ipfilectr {}

@@ -1,0 +1,26 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Les familles exponentielles naturelles quadratiques et leurs polyn\IeC {\^o}mes orthogonaux}{\reset@font\mtcSfont 40}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Repr\IeC {\'e}sentation polynomiale de la densit\IeC {\'e} en dimension 1}{\reset@font\mtcSfont 41}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{\reset@font\mtcSSfont 41}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Application aux distributions compos\IeC {\'e}es en dimension $1$}{\reset@font\mtcSSfont 43}{subsection.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Choix de la mesure de r\IeC {\'e}f\IeC {\'e}rence}{\reset@font\mtcSSSfont 44}{section*.13}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode V\IeC {\'e}rification de la condition d'{}int\IeC {\'e}grabilit\IeC {\'e}}{\reset@font\mtcSSSfont 45}{section*.14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Vitesse de convergence de l'{}approximation et calcul des coefficients de la repr\IeC {\'e}sentation polynomiale}{\reset@font\mtcSSSfont 46}{section*.15}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Repr\IeC {\'e}sentation polynomiale de la densit\IeC {\'e} en dimension $n$}{\reset@font\mtcSfont 50}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{\reset@font\mtcSSfont 50}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Application aux distributions compos\IeC {\'e}es en dimension $n$}{\reset@font\mtcSSfont 52}{subsection.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Quel mod\IeC {\`e}le pour la distribution compos\IeC {\'e}e?}{\reset@font\mtcSSSfont 52}{section*.16}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Choix de la mesure de r\IeC {\'e}f\IeC {\'e}rence}{\reset@font\mtcSSSfont 52}{section*.17}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode V\IeC {\'e}rification de la condition d'int\IeC {\'e}grabilit\IeC {\'e}}{\reset@font\mtcSSSfont 53}{section*.18}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode La fonction g\IeC {\'e}n\IeC {\'e}ratrice des coefficients de la repr\IeC {\'e}sentation polynomiale}{\reset@font\mtcSSSfont 56}{section*.19}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Cas $n=2$: La connexion avec les probabilit\IeC {\'e}s de Lancaster}{\reset@font\mtcSSfont 56}{subsection.2.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Illustrations num\IeC {\'e}riques: Application \IeC {\`a} la distribution Poisson compos\IeC {\'e}e}{\reset@font\mtcSfont 59}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Le cas des sinistres de loi exponentielle $\Gamma (1,\beta )$}{\reset@font\mtcSSfont 61}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Le cas des sinistres de loi gamma $\Gamma (\alpha ,\beta )$}{\reset@font\mtcSSfont 68}{subsection.2.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Le cas des sinistres de loi uniforme $\mathcal {U}\left [\alpha ,\beta \right ]$}{\reset@font\mtcSSfont 74}{subsection.2.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Perspectives en statistique}{\reset@font\mtcSfont 80}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Estimation de la densit\IeC {\'e} de probabilit\IeC {\'e} via la repr\IeC {\'e}sentation polynomiale}{\reset@font\mtcSSfont 80}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Application aux distributions compos\IeC {\'e}es}{\reset@font\mtcSSfont 84}{subsection.2.5.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode L'approche param\IeC {\'e}trique}{\reset@font\mtcSSSfont 85}{section*.46}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode L'approche non-param\IeC {\'e}trique}{\reset@font\mtcSSSfont 85}{section*.47}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode L'approche semi-param\IeC {\'e}trique}{\reset@font\mtcSSSfont 86}{section*.48}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}R\IeC {\'e}f\IeC {\'e}rences}{\reset@font\mtcSfont 88}{section.2.6}}

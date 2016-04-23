@@ -1,0 +1,123 @@
+%% Copyright (Ct) 2014 Dorian Depriester
+%% http://blog.dorian-depriester.fr
+%%
+%% This file may be distributed and/or modified under the conditions
+%% of the LaTeX Project Public License, either version 1.3c of this
+%% license or (tat your option) any later version. The latest version
+%% of this license is in:
+%%
+%%    http://www.latex-project.org/lppl.txt
+%%
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2006/05/20 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is Dorian Depriester
+%% <contact [at] dorian [-] depriester [dot] fr>.
+%%
+%% This is main.tex for French PhD Thesis.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Fichier maitre				%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 12pt, twoside,openright]{report}
+\input{Preambule}		% Liste des packages et de leurs options
+\input{CommandesPerso}	% Commandes et environnements perso
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   			Liste des fichiers à compiler					                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\includeonly{
+Remerciements,
+Resume,Abstract,Introduction
+,Chapitre1,Chapitre2,Chapitre4,Chapitre5,Chapitre6,Conclusion,Annexes
+}
+
+
+
+% Infos de la page de garde
+\author{Pierre-Olivier \scshape{Goffard}}
+\title{Approximation polynomiale de la densité de probabilité: Application en assurance.} 
+\specialite{Mathématiques appliquées}
+\directeur{Denys \scshape{Pommeret}}
+\encadrant{Stephane \scshape{Loisel}}
+\supervisor{Xavier \scshape{Guerrault}}
+
+
+\date{\today}
+\jurya{Mme Ponte Casta\~neda}{Professeur}{Examinateur}
+\juryb{Prof. Claude Lefebvre}{Professeur}{Rapporteur}
+\juryc{Prof. Patrice Bertaille}{Professeur}{Rapporteur}
+\juryd{Mme Ponte Casta\~neda}{Professeur}{Examinateur}
+\ecole{l'Université d\rq{}Aix-Marseille}
+
+% Méta-données du PDF
+\hypersetup{
+    pdfauthor={Pierre-Olivier Goffard},
+    pdfsubject={Manuscrit de thèse de doctorat},
+    pdftitle={Développement polynomial de la fonction de densité: Application en assurance.},
+    pdfkeywords={Approximation, Familles Exponentielles Naturelles Quadratiques, Estimation Nonparamétriques, Distribution Composées, Théorie de la Ruine}
+}
+
+
+
+\begin{document}
+% Préambule
+
+\newtheorem{Theo}{Theorème}
+\newtheorem{Lemm}{Lemme}
+\newtheorem{Prop}{Proposition}
+\newtheorem{Rk}{Remarque}
+\newtheorem{Cor}{Corollaire}
+\newtheorem{Def}{Définition}
+\newtheorem{Ex}{Exemple}
+\newtheorem{Mod}{Modèle}
+	\pagedegarde
+	\dominitoc						% Génération des mini-toc
+	\pagenumbering{roman}
+		% Table des matières
+			\setcounter{tocdepth}{1}	% Pas besoin de trop détailler le sommaire ici (chapitres/sections)
+			\tableofcontents
+		% Liste des figures
+			\renewcommand*\listfigurename{Liste des figures}
+			\listoffigures
+		% Liste des tableaux
+		\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+% 		Contenu du document			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagenumbering{arabic}
+
+	\includefrom{Remerciements/}{Remerciements}
+	\includefrom{Introduction/}{Introduction}	
+	\renewcommand{\bibsection}{\section{Références}}
+        
+	\includefrom{Chapitre1/}{Chapitre1}	
+	\includefrom{Chapitre2/}{Chapitre2} 		
+	\includefrom{Chapitre3/}{Chapitre3}	
+	\includefrom{Chapitre4/}{Chapitre4}	
+	\includefrom{Chapitre5/}{Chapitre5}	
+	\includefrom{Chapitre6/}{Chapitre6}
+	\includefrom{Conclusion}{Conclusion}
+	\includefrom{Resume/}{Resume}	
+	\includefrom{Abstract/}{Abstract}	
+	
+	
+	
+	% Annexes
+%	\begin{appendix}
+%		\pagenumbering{Roman}
+%			%\includefrom{Annexes/}{Annexes}				% Figures en annexe
+%			
+%		% Liste des atcronymes, glossaire et liste des symboles (dans l'ordre)		
+%		\printglossary[type=\acronymtype , title={Liste des acronymes}, toctitle={Liste des acronymes}]
+%		\printglossary[title=Glossaire,toctitle=Glossaire]
+%		\printglossary[type=notation,title={Liste des symboles}, toctitle={Liste des symboles}]
+%	
+%	\end{appendix}
+\end{document}

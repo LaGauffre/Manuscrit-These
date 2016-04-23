@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%									ANNEXES 												%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Annexes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Lois de probabilités et processus stochastiques apparaissant dans ce manuscrit}
+\subsection{Lois de probabilité sur $\mathbb{R}^{+}$}\label{AppendiceProbabilityPositiveContinuous}
+\begin{Def}\label{DefinitionGamma}
+Soit $X$ une variable aléatoire de loi gamma $\Gamma(\alpha,\beta)$, de paramètre de forme $\alpha$ et de paramètre d'échellle $\beta$. La densité de la variable aléatoire $X$ est donnée par 
+\begin{equation}\label{GammaDensity}
+f_{X}(x)=\frac{e^{-x/\beta}x^{\alpha-1}}{\Gamma(\alpha)\beta^{\alpha}},\hspace{0.2cm}x\in\mathbb{R}^{+},
+\end{equation}
+et sa \gls{fgm} par
+\begin{equation}\label{fgmGamma}
+\mathcal{L}_{X}(s)=\left(\frac{1}{1-s\beta}\right)^{\alpha}.
+\end{equation}
+A noter que le cas particulier $\alpha\in\mathbb{N}$ correspond à la loi de Erlang et que le cas très particulier $\alpha=1$ correspond à la loi exponentielle.
+\end{Def}
+Une famille de loi de probabilités sur $\mathbb{R}^{+}$ plus générale englobe notamment les lois de Erlang et les mélanges finis de loi de Erlang, il s'agit des distributions \textit{phase-type}.
+
+
+
+
+\subsection{Lois de probabilité discrètes associées aux variables aléatoires de comptage}\label{AppendiceProbabilityDiscrete}
+
+\subsection{Lois de probabilité bivariées}\label{AppendiceBivariateProbability}
+\begin{Def}
+Soit $(X,Y)$ vecteur aléatoire réel  de loi $DBVE(\rho,\mu_{1},\mu_{2})$. La densité jointe de $(X,Y)$ est donnée par 
+\begin{equation}\label{JointDensityDBVED}
+f_{X,Y}(x,y)=\frac{\mu_{1}\mu_{2}}{(1-\rho)}\exp\left[-\frac{x\mu_{1}+y\mu_{2}}{(1-\rho)}\right]
+\bold{I}_{0}\left[\frac{2\sqrt{\rho\mu_{1}\mu_{2}xy}}{1-\rho}\right],
+\end{equation}
+et sa \gls{fgmm} par
+\begin{equation}\label{fgmmGDBVE}
+\mathcal{L}_{X,Y}(s,t)=\frac{\mu_{1}\mu_{2}}{(\mu_{1}-s)(\mu_{2}-t)-\rho st}.
+\end{equation}
+Cette loi permet de modéliser la durée de vie jointe de deux composants subissant un nombre aléatoire de chocs séparés par des laps temps distribués exponetiellement.
+\end{Def}
+
+\subsection{Le processus de Poisson simple}\label{AppendicePoissonProcess}
+Un processus de comptage permet le décompte du nombre d\rq{}occurence d\rq{}un évènement au cours du temps. Soit $\{T_{k}\}_{k\in\mathbb{N}}$ une suite de variable aléatoire positive correspondant aux temps inter-arrivée entre les évènements. La variable aléatoire 
+\begin{equation*}
+\sigma_{n}=\sum_{i=1}^{n}T_{i}
+\end{equation*}
+correspond à l\rq{}instant d\rq{}arrivée du $n^{ème}$  évènement. Le processus ponctuel $\{N_{t}\}_{t\geq0}$ égale au nombre d\rq{}occurence de l\rq{}évènement est défini par 
+\begin{equation}
+N_{t}=\sum_{n=1}^{+\infty}\bold{1}_{\sigma_{n}\leq t}
+\end{equation}
+\begin{Def}\label{PoissonProcessDefinition} 
+Le processus de Poisson simple d\rq{}intensité $\beta$ est un processus de comptage $\{N_{t}\}_{t\geq0}$ caracactérisé par des temps inter-arrivée entre les évènements $\{T_{k}\}_{k\in\mathbb{N}}$ \gls{iid} de loi exponentielle $\Gamma(1,1/\beta)$.
+\end{Def}
+\subsection{Fonctions spéciales}\label{AppendiceSpecialFunction}
+\begin{Def}
+Soit $X$ et $Y$ deux variables aléatoires réelles et indépendantes, de densités respectives $f_{X}$ et $f_{Y}$. La densité de la variable aléatoire $X+Y$ est donnée par le produit de convolution de $f_{X}$ et $f_{Y}$, avec
+\begin{equation}
+f_{X+Y}(x)=\left(f_{X}*f_{Y}\right)(x)=\int_{-\infty}^{x}f_{X}(x-y)f_{Y}(y)d\lambda(y).
+\end{equation}  
+\end{Def}
+
+%
+%\section{Figures annexes}
+%	\blindtext
+%	On rappelle que \gls{alpha} et \gls{gamma} sont liés par la relation~\eqref{eq:alphagamma}. Pour plus de détails, voir page~\pageref{eq:alphagamma}.
+%
+%\section{Tableaux annexes}
+%	\blindtext

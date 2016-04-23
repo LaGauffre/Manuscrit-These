@@ -1,0 +1,130 @@
+\begin{thebibliography}{21}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Abate} \bbletal{}(1995)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh95}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1995,
+  \enquote{On the {L}aguerre method for numerically inverting {L}aplace
+  transforms}, \emph{INFORMS Journal on Computing}, \bblvol{}~8, \bblno{}~4,
+  \bblpp{} 413--427.
+
+\bibitem[{\textsc{Abate} \bbletal{}(1998)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh98}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1998,
+  \enquote{Numerical inversion of multidimensional {L}aplace transform by the
+  {L}aguerre method}, \emph{Performance Evaluation}, \bblvol{}~31, \bblno{}~3,
+  \bblpp{} 229--243.
+
+\bibitem[{\textsc{Ambagaspitiya}(1998)}]{Am98}
+\textsc{Ambagaspitiya, R.} 1998, \enquote{On the distribution of a sum of
+  correlated aggregate claims}, \emph{Insurance: Mathematics and Economics},
+  \bblvol{}~23, \bblno{}~1, \bblpp{} 15--19.
+
+\bibitem[{\textsc{Ambagaspitiya}(1999)}]{Am99}
+\textsc{Ambagaspitiya, R.} 1999, \enquote{On the distributions of two classes
+  of correlated aggregate claims}, \emph{Insurance: Mathematics and Economics},
+  \bblvol{}~24, \bblno{}~3, \bblpp{} 301--308.
+
+\bibitem[{\textsc{Barndorff-Nielsen}(1978)}]{Ba78}
+\textsc{Barndorff-Nielsen, O.} 1978, \emph{Information and {E}xponential
+  {F}amilies in {S}tatistical {T}heory}, Wiley.
+
+\bibitem[{\textsc{Choudhury} \bbletal{}(1994)\textsc{Choudhury},
+  \textsc{Lucantoni} \bbland{} \textsc{Whitt}}]{ChLuWh94}
+\textsc{Choudhury, G.}, \textsc{D.~Lucantoni} \bbland{} \textsc{W.~Whitt}.
+  1994, \enquote{Multidimensional transform inversion application to the
+  transient {M} / {G} / 1 queue}, \emph{The Annals of Applied Probability},
+  \bblvol{}~4, \bblno{}~3, \bblpp{} 719--740.
+
+\bibitem[{\textsc{Diaconis} \bbland{} \textsc{Griffiths}(2012)}]{DiaGri12}
+\textsc{Diaconis, P.} \bbland{} \textsc{R.~Griffiths}. 2012,
+  \enquote{Exchangeables pairs of {B}ernouilli random variables, {K}rawtchouck
+  polynomials, and {E}hrenfest urns}, \emph{Australian and New Zealand Journal
+  of Statistics}, \bblvol{}~54, \bblno{}~1, \bblpp{} 81--101.
+
+\bibitem[{\textsc{Dowton}(1970)}]{Do70}
+\textsc{Dowton, F.} 1970, \enquote{Bivariate exponential distributions in
+  reliabilty theory}, \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, \bblpp{} 408--417.
+
+\bibitem[{\textsc{He} \bbletal{}(2013)\textsc{He}, \textsc{Nagaraja} \bbland{}
+  \textsc{Wu}}]{60}
+\textsc{He, Q.}, \textsc{H.~Nagaraja} \bbland{} \textsc{C.~Wu}. 2013,
+  \enquote{Efficient simulation of complete and censored samples from common
+  bivariate distributions}, \emph{Computational Statistics}, \bblvol{}~28,
+  \bblno{}~6, \bblpp{} 2479--2494.
+
+\bibitem[{\textsc{Jin} \bbland{} \textsc{Ren}(2013)}]{JiRe13}
+\textsc{Jin, T.} \bbland{} \textsc{J.~Ren}. 2013, \enquote{Recursions and
+  {F}ast {F}ourier {T}ranform for a new bivariate aggregate claims model},
+  \emph{Scandinavian Actuarial Journal}, , \bblno{} ahead-of-print, \bblpp{}
+  1--24.
+
+\bibitem[{\textsc{Koudou}(1995)}]{Kou95}
+\textsc{Koudou, A.~E.} 1995, \emph{Probl{\`e}mes de marges et familles
+  exponentielles naturelles}, \bblphdthesis{}, Toulouse.
+
+\bibitem[{\textsc{Koudou}(1996)}]{Kou96}
+\textsc{Koudou, A.~E.} 1996, \enquote{Probabilit{\'e}s de {L}ancaster},
+  \emph{Expositiones Mathematicae}, \bblvol{}~14, \bblpp{} 247--276.
+
+\bibitem[{\textsc{Lancaster}(1958)}]{Lan58}
+\textsc{Lancaster, H.} 1958, \enquote{The structure of bivariate
+  distributions}, \emph{The Annals of Mathematical Statistics}, \bblpp{}
+  719--736.
+
+\bibitem[{\textsc{Marshall} \bbland{} \textsc{Olkin}(1967)}]{MaOl67}
+\textsc{Marshall, A.} \bbland{} \textsc{L.~Olkin}. 1967, \enquote{A
+  multivariate exponential distribution}, \emph{Journal of the American
+  Statitical Association}, \bblvol{}~62, \bblno{} 317, \bblpp{} 30--44.
+
+\bibitem[{\textsc{Mnatsakanov}(2011)}]{Mn11}
+\textsc{Mnatsakanov, R.~M.} 2011, \enquote{Moment-recovered approximations of
+  multivariate distributions: The {L}aplace transform inversion},
+  \emph{Statistics and Probability Letters}, \bblvol{}~81, \bblno{}~1, \bblpp{}
+  1--7.
+
+\bibitem[{\textsc{Mnatsakanov} \bbland{} \textsc{Sarkisian}(2013)}]{MnSa13}
+\textsc{Mnatsakanov, R.~M.} \bbland{} \textsc{K.~Sarkisian}. 2013, \enquote{A
+  note on recovering the distribution from exponential moments}, \emph{Applied
+  Mathematics and Computation}, \bblvol{} 219, \bblpp{} 8730--8737.
+
+\bibitem[{\textsc{Mnatsakanov} \bbletal{}(2014)\textsc{Mnatsakanov},
+  \textsc{Sarkisian} \bbland{} \textsc{Hakobyan}}]{MnSaHa14}
+\textsc{Mnatsakanov, R.~M.}, \textsc{K.~Sarkisian} \bbland{}
+  \textsc{A.~Hakobyan}. 2014, \enquote{Approximation of the ruin probability
+  using the scaled {L}aplace transform inversion}, \emph{Working Paper}.
+
+\bibitem[{\textsc{Morris}(1982)}]{Mo82}
+\textsc{Morris, C.~N.} 1982, \enquote{Natural {E}xponential {F}amilies with
+  {Q}uadratic {V}ariance {F}unctions}, \emph{The Annals of Mathematical
+  Statistics}, \bblvol{}~10, \bblno{}~1, \bblpp{} 65--80.
+
+\bibitem[{\textsc{Sundt}(1999)}]{Su99}
+\textsc{Sundt, B.} 1999, \enquote{On multivariate {P}anjer recursions},
+  \emph{Astin Bulletin}, \bblvol{}~29, \bblno{}~1, \bblpp{} 29--45.
+
+\bibitem[{\textsc{Szeg{\"o}}(1939)}]{Sz39}
+\textsc{Szeg{\"o}, G.} 1939, \emph{Orthogonal Polynomials}, \bblvol{} XXIII,
+  American mathematical society Colloquium publications.
+
+\bibitem[{\textsc{Vernic}(1999)}]{Ve99}
+\textsc{Vernic, R.} 1999, \enquote{Recursive evaluation of some bivariate
+  compound distibutions}, \emph{Astin Bulletin}.
+
+\end{thebibliography}

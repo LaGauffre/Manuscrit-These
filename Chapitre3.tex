@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%									Chapitre 3												%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Estimation statistique de la densité de probabilité via une représentation polynomiale}\label{Chapter3}
+	\citationChap{
+		% Citation
+	}{Auteur}
+	\minitoc
+	\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% Début du chapitre
+\section{Défnition de l\rq{}estimateur}
+\section{Estimation de la densité de probabilité par un développement polynomial}\label{Chapter2Section3}
+Soit $X_{1},\ldots,X_{n}$ un échantillon \gls{iid} de taille $n$ issu de loi de probabilité supposée $\mathbb{P}_{X}$. Un estimateur de la densité est obtenu à partir de l'approximation \eqref{PolynomialApproximationf}, avec 
+\begin{equation*}
+\widehat{f_{X}}^{K}(x)=\widehat{f_{X,\nu}}^{K}(x)\widehat{f_{\nu}}(x).
+\end{equation*}
+L'écriture $\widehat{f_{\nu}}$ sous-entend une estimation statistique des paramètres de la mesure de probabilité de référence. La distribution de référence représente une distribution a priori. Le choix d'un ordre de troncature $K=0$ équivaut à faire l'hypothèse d'un modèle paramètrique basé sur les \gls{fenq}. Le choix d'un ordre de troncature supérieur à $0$ permet d'ajuster et de corriger l'erreur de modèle via un développement polynomial. L'estimateur proposé ici est semi-paramétrique. La technique d'estimation du paramètre dépend du choix de la mesure de référence et du problème étudié. Afin de conserver un caractère générale pour l'instant, il est supposé que les paramètres de la mesure de référence ont été estimés. Le système de polynômes orthonormaux $\{Q_{k}\}_{k\in\mathbb{N}}$ est construit sur la base de cette estimation pour poursuivre avec l'estimation de $f_{X,\nu}^{K}$. Cette idée de démarrer avec un première estimation paramètrique et d\rq{}ajuster à l\rq{}aide d'une projection sur une base de fonctions orthogonales remonte aux travaux de \citet{Wh58} et \citet{Br78}. Le terme \textit{prior distribution} est d\rq{}ailleurs employé. Dans les travaux de \citet{Bu92} et de \citet{PrJi12} des polynômes orthogonaux par rapport à une mesure de référence, appelée fonction de poids, sont utilisés explicitement. Dans le papier de \citet{HjGl95}, la densité par rapport à une loi paramétrique de référence estimer via un estimateur à noyau.
+
+L'estimateur de  $f_{X,\nu}^{K}$ est donné par 
+\begin{equation}\label{Estimatorg}
+\widehat{f_{X,\nu}}^{K}(x)=\sum_{k=1}^{K}\widehat{a_{k}}Q_{k}(x),
+\end{equation}
+où les composantes du vecteur des paramètres $\widehat{\bold{a}}=(\widehat{a_{1}},\ldots,\widehat{a_{K}})$ sont estimées par 
+\begin{equation}\label{EstimatorCoefficient}
+\widehat{a_{k}}=w_{k}\frac{1}{n}\sum_{i=1}^{n}Q_{k}(X_{i}), \hspace{0.2cm}\forall k\in\{1,\ldots,K\}.
+\end{equation}
+Le vecteur $\bold{w}=(w_{1},\ldots,w_{K})$ est un modulateur dont les composantes vérifient $0\leq w_{k}\leq1$ pour $k=1,\ldots,K$. Le nombre de paramètres à estimer ne peut excéder le nombre d\rq{}observations $n$, ce qui revient à imposer la condition $K\leq n$. Le problème d\rq{}estimation est non-paramétrique au sens où le nombre de paramètres à estimer augmente avec le nombre d\rq{}observations. L\rq{}estimation non-paramétrique de la densité via les séries othogonales est un sujet classique dans la litterature statistique. Les avantages sont, entre autres, la facilité de l'implémentation et l\rq{}efficacité en dimension supérieure à $1$. L\rq{}estimateur \eqref{Estimatorg} est originale car il fait intervenir une mesure de probabilité de référence. Les estimateurs non-paramétriques de la densité de ce type sont plus souvent définis comme des développements sur des bases de fonctions orthogonales. Ces d\rq{}estimateurs ont été introduit par \citet{Ce62}. Les fonctions de Hermite, définis comme le produit de la densité de la loi normale et des polynômes d\rq{}Hermite, ont été étudiés dans les papier de \citet{Sc67} et \citet{Wa77}. Une extension à l\rq{}estimation de la fonction de densité et de ses dérivée est proposée dans le travail de \citet{GrPa84}. Une étude de l'estimateur basé sur les fonctions de Laguerre, définis comme le produit de la densité de la loi gamma et des polynômes de Laguerre, et une comparaison avec l'estimateur basé sur les fonctions de Hermite sont produites dans le papier de \citet{Ha80}. Le choix et l\rq{}optimisation du modulateur $\bold{w}$ a fait l'objet de certain travaux. Le critère proposé dans \citet{KrTa68} revient à supposer $\bold{w}$ de la forme $(1,\ldots,1,0,\ldots,0)$. Cette idée a été repris et affiner par exemple dans \citet{DiHa86}. Dans le travail de \citet{Wa69}, le modulateur $\bold{w}$ est optimisé pour que la suite des composantes du vecteur soit monotone, décroissante vers $0$. Le livre d\rq{}\citet{Ef99} décrit de façon exhaustive les propriétés de ces estimateurs basés sur les fonctions orthogonales, l\rq{}accent est mis sur l\rq{}utilisation des fonctions trigonométriques. A noter également, l\rq{}emploi d\rq{}une mesure de référence sans l\rq{}aspect paramétrique dans le papier de \citet{AnFi80} dans lequel le point de vue de \citet{Wa69} est adoptée concernant le choix de $\bold{w}$.
+
+Le problème d'estimation est rapproché du \textit{Normal Mean problem} à l'image de ce qui est présenté dans les chapitre 7 et 8 de l'ouvrage de \citet{Wa06}. L'idée est de rapprocher l'estimation des coefficients $\{\widehat{a_{k}}\}_{k\in\{1,\ldots,n\}}$ de l'estimation d'une loi gaussienne multivariée. Le vecteur aléatoire $\bold{Z}=(Z_{1},\ldots,Z_{n})$ est défini par 
+\begin{equation}\label{ZDefinition}
+Z_{k}=\frac{1}{n}\sum_{i=1}^{n}Q_{k}(X_{i}),\hspace{0.2cm}k=1,\ldots,n.
+\end{equation}
+Les composantes du vecteur $\bold{Z}$ estiment sans biais les coefficients du développement avec
+\begin{equation}
+\mathbb{E}\left(Z_{k}\right)=a_{k},\hspace{0.2cm}k=1,\ldots,n.
+\end{equation}
+La variance de $Z_{k}$ est donnée par
+\begin{equation} 
+\sigma_{k,n}^{2}=\mathbb{E}(Z_{k}),\hspace{0.2cm}k=1,\ldots,n.
+\end{equation}
+L\rq{}\gls{eqmi} issue de l'estimation de $f_{X,\nu}$ par l'estimateur \eqref{Estimatorg} avec un ordre de troncature égal au nombre d\rq{}observations est donné par
+\begin{eqnarray}
+R\left(f_{X,\nu},\widehat{f_{X,\nu}}^{n} \right)&=&\mathbb{E}\left[L\left(f_{X,\nu},\widehat{f_{X,\nu}}^{n}\right)\right]\label{EqmiEstimation1}\\
+&=&\sum_{k=1}^{n}w_{k}^{2}\sigma_{k,n}^{2}+\sum_{k=n+1}^{+\infty}a_{k}^{2}\label{SquareBias1}\\
+&+&\sum_{k=1}^{n}(1-w_{k})^{2}a_{k}^{2}\label{Variance1}. 
+\end{eqnarray} 
+Le risque \eqref{EqmiEstimation1} est la somme du biais au carré \eqref{SquareBias1} et de la variance \eqref{Variance1} de l'estimateur. Le but est de trouver le modulateur $\bold{w}$ permettant d\rq{}optimiser ce risque. La quantité $\sum_{k=n+1}^{+\infty}a_{k}^{2}$ est inaccessible, elle est cependant positive et indépendante du modulateur. L'optimisation du risque \eqref{EqmiEstimation1} sur l'ensemble des modulateurs revient à l'optimisation de
+\begin{equation}\label{ModifiedRisk}
+R\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)=\sum_{k=1}^{n}(1-w_{k})^{2}a_{k}^{2}+\sum_{k=1}^{n}w_{k}^{2}\sigma_{k,n}^{2}.
+\end{equation}
+De plus, il est classique d'obtenir un résultat du type 
+\begin{equation*}
+a_{k}=O\left(\frac{1}{k}\right),\hspace{0.2cm}k\rightarrow+\infty.
+\end{equation*}
+sous des hypothèses de régularité pour la fonction $f_{X,\nu}$ et ses dérivées. La quantité $\sum_{k=n+1}^{+\infty}a_{k}^{2}$ peut alors être négligée dans un contexte d'estimation non-paramètrique de la densité pour lequel la vitesse de convergence optimal est de l'ordre de $k^{-4/5}$. 
+%Ce résultat n\rq{}est pas démontré ici pour toutes les developpement polynomiaux ayant pour mesure de référence une \gls{fenq}, il est prouvé pour la combinaison mesure gamma et polynômes de Laguerre généralisés. 
+
+L\rq{}approche \textit{Normal Mean} est justifiée par le résultat suivant 
+\begin{Theo}\label{AsNormalityCoefficient}
+Le vecteur $\bold{Z}$ converge en loi vers un vecteur gaussien
+\begin{equation}
+\sqrt{n}\left(\bold{Z}-\bold{a}\right)\underset{a.s}{\sim}\mathcal{N}\left(0,\Sigma\right),\hspace{0.2cm} n\rightarrow+\infty,
+\end{equation}
+où $\Sigma=\left\{Cov\left(Q_{k}(X),Q_{l}(X)\right)\right\}_{k,l\in\{1,\ldots,n\}^{2}}$ est la matrice de variance-covariance. 
+\end{Theo}
+\begin{proof}
+Il s\rq{}agit simplement d\rq{}une application du \gls{tcl} multivarié.
+\end{proof}
+Dans l\rq{}expression du risque \eqref{ModifiedRisk}, interviennent des quantités inconnues qu'il est nécessaire d'estimer statistiquement. L\rq{}application du théorème \ref{AsNormalityCoefficient} permet de proposer un estimateur du risque du type \gls{sure} par application du théorème de \citet{St81}, dont l\rq{}énoncé est le suivant:
+\begin{Theo}[Stein 1981]\label{TheoSURE}
+Soit $\bold{Z}\sim\mathcal{N}(\bold{a},\bold{V})$ un vecteur gaussien de dimension $n$, de moyenne $\bold{a}$ et de matrice de Variance-Covariance $\bold{V}=\left\{Cov\left(Z_{k},Z_{l}\right)\right\}_{k,l\in\{1,\ldots,n\}^{2}}$. Soit $\widehat{\bold{a}}=\widehat{\bold{a}}(\bold{Z})$ un estimateur de $\bold{a}$. Soit l\rq{}application $h:\mathbb{R}^{n}\mapsto\mathbb{R}^{n}$ définie par $h(\bold{Z})=\widehat{\bold{a}}-\bold{Z}$. Si $h$ est faiblement différentiable alors
+\begin{equation}\label{SUREFormula}
+\widehat{R}(\bold{Z})=\text{tr}(\bold{V})+2. \text{tr}(\bold{VD})+||h(\bold{Z})||_{2}^{2}
+\end{equation} 
+estime sans biais l\rq{}\gls{eqm} de l'estimation du vecteur $\bold{a}$ par $\widehat{\bold{a}}$, c\rq{}est à dire 
+\begin{equation*}
+E\left[\widehat{R}(\bold{Z})\right]=E\left(||\bold{a}-\bold{\widehat{a}}||_{2}^{2}\right).
+\end{equation*}
+L\rq{}application $\text{tr}(.)$ désigne la trace d\rq{}une matrice, la norme $||.||_{2}$ représente la norme euclidienne d\rq{}un vecteur de $\mathbb{R}^{n}$, et $\bold{D}$ est la matrice dont le terme générale $(i,j)\in\{1,\ldots,n\}^{2}$ est la dérivée partielle de la fonction $h(z_{1},\ldots,z_{n})$ par rapport à $z_{j}$.   
+\end{Theo}
+\begin{Def}
+Rappel de la définition de faible diférentiabilité ?
+\end{Def}
+L\rq{}application duThéorème \ref{TheoSURE} permet de donner un estimateur sans bias du risque \eqref{ModifiedRisk} via la proposition suivante:
+\begin{Prop}\label{PropSURE}
+Un estimateur sans biais dur risque $R\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)$ est donnée par 
+\begin{equation}\label{ModifiedRiskSURE}
+\widehat{R}\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)=\sum_{k=1}^{n}(1-w_{k})^{2}\left(Z_{k}^{2}-\sigma_{k,n}^{2}\right)+\sum_{k=1}^{n}w_{k}^{2}\sigma_{k,n}^{2}.
+\end{equation}
+\end{Prop}
+\begin{proof}
+Soit $\bold{W}=\text{diag}(\bold{w})$, l'estimateur de $\bold{a}$ est défini par $\widehat{\bold{a}}=\bold{W}\bold{Z}$. Le risque \eqref{ModifiedRisk} peut s'écrire
+\begin{equation*}
+R\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)=\mathbb{E}\left(||\bold{a}-\widehat{\bold{a}}||_{2}^{2}\right).
+\end{equation*}
+Cette identification permet d'appliquer le théorème \ref{TheoSURE} pour obtenir une estimation sans biais du risque \eqref{ModifiedRisk}. Le théorème \ref{TheoSURE} est appliqué avec
+\begin{equation*}\label{Fonctionh}
+h(\bold{Z})=\left(\bold{W}-\bold{I}_{n}\right)\bold{Z}
+\end{equation*}
+où
+\begin{equation*}\label{IdentityMatrix}
+\bold{I_{N}}=\begin{pmatrix}
+1&0&\hdots&0\\
+0&1&\ddots&\vdots\\
+\vdots&\ddots&\ddots&0\\
+0&\hdots&0&1\\
+ \end{pmatrix},
+\end{equation*}
+est la matrice identité de taille $n\times n$. Ce qui implique que 
+\begin{equation*}
+\bold{D}=\bold{W}-\bold{I}_{n}.
+\end{equation*}  
+En ré-injectant dans la formule \gls{sure} définie en \eqref{SUREFormula}, l'expression \eqref{ModifiedRiskSURE} est obtenue
+\begin{eqnarray*}
+R\left(f_{X,\nu}^{n},\widehat{f_{X}}^{n} \right)&=&tr(\bold{V})+2. tr(\bold{VD})+||h(\bold{Z})||_{2}^{2}\\
+&=&\sum_{k=1}^{n}\sigma_{k,n}^{2}+\sum_{k=1}^{n}(w_{k}-1)\sigma_{k,n}^{2}+\sum_{k=1}^{n}(w_{k}-1)^{2}Z_{k}^{2}\\
+&=&\sum_{k=1}^{n}(1-w_{k})^{2}(Z_{k}^{2}-\sigma_{k,n}^{2})+\sum_{k=1}^{n}w_{k}^{2}\sigma_{k,n}^{2}.
+\end{eqnarray*}
+\end{proof}
+L\rq{}estimation du risquee \eqref{ModifiedRiskSURE} est très proche de l\rq{}expression du risque \eqref{ModifiedRisk}. La quantité $a_{k}^{2}$ est simplement remplacée par son estimation sans biais $Z_{k}^{2}-\sigma_{k,n}^{2}$ pour $k=1,\ldots,n$. Par mesure de précaution, l'estimation $Z_{k}^{2}-\sigma_{k,n}^{2}$ est remplacé par $\left(Z_{k}^{2}-\sigma_{k,n}^{2}\right)_{+}$ pour garantir la positivité de l\rq{}estimation de $a_{k}^{2}$ et éviter une sous-estimation du risque.Pour l\rq{}évaluation du risque \eqref{ModifiedRiskSURE}, la variance $\sigma^{2}_{k,n}$ est estimée sans biais  
+\begin{equation}\label{VarianceEstimation}
+\widehat{\sigma}_{k,n}^{2}=\frac{1}{n(n-1)}\sum_{i=1}^{n}\left(Q_{k}(X_{i})-Z_{k}\right)^{2},\hspace{0.2cm},k=1,\ldots,n.
+\end{equation}
+Le risque est finalement estimé par 
+\begin{equation}\label{RiskFinalEstimation}
+\widehat{\widehat{R}}\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)=\sum_{k=1}^{n}(1-w_{k})^{2}\left(Z_{k}^{2}-\widehat{\sigma}_{k,n}^{2}\right)_{+}+\sum_{k=1}^{n}w_{k}^{2}\widehat{\sigma}_{k,n}^{2}.
+\end{equation}
+La procédure \gls{react} proposée dans les travaux de \citet{Be00} pour estimer la fonction de régression à l'aide des fonctions orthogonales, est adaptée à l'estimation de la densité de probabilité par polynômes orthogonaux. Cette procédure permet d\rq{}optimiser le risque \eqref{RiskFinalEstimation} sur certaines classes d\rq{}estimateurs.  L'estimateur \gls{react} est défini par:
+\begin{Def}
+Soit $\mathcal{M}$ une classe de modulateur. L'estimateur modulé de $\bold{a}$ est $\widehat{\bold{a}}=(\widehat{w}_{1}Z_{1},\ldots,\widehat{w}_{n}Z_{n})$ où $\widehat{\bold{w}}$ minimise $\widehat{\widehat{R}}\left(f_{X,\nu}^{n},\widehat{f_{X,\nu}}^{n} \right)$ sur l'ensemble des modulateurs de la classe $\mathcal{M}$. L'estimateur \gls{react} de la densité de probabilité est 
+\begin{equation*}
+\widehat{f_{X,\nu}}^{n}=\sum_{k=0}^{n}\widehat{a}_{k}Q_{k}(x).
+\end{equation*}
+\end{Def}
+Trois classes de modulateurs sont considérées:
+\begin{Def}
+Les $3$ classes de modulateurs $\bold{w}=(w_{1},\ldots,w_{n})$ sont:
+\begin{enumerate}
+\item La classe $\mathcal{M}_{CONS}$ qui désigne la classe des modulateurs constants tels que $w_{i}=w$ pour $i=1,\ldots,n$, 
+\item La classe $\mathcal{M}_{MON}$ qui désigne la classe des modulateurs monotones tels que $1\geq w_{1}\geq\ldots\geq w_{n}\geq 1$ pour $i=1,\ldots,n$,
+\item La classe $\mathcal{M}_{SME}$ qui désigne la classe des modulateurs de \gls{sme} tels que $\bold{w}=(1,\ldots,1,0,\ldots,0)$.
+\end{enumerate}
+\end{Def}
+L'utilisation de ces $3$ classes de modulateurs est justifiée dans le papier \citet{BeDu98} via le résultat suivant:
+\begin{Theo}[Beran et Dumbgen 1998]\label{BreanDumbgenTheo}
+Soit $\mathcal{M}$ une classe de modulateur parmi $\mathcal{M}_{CONS}$, $\mathcal{M}_{MON}$ et $\mathcal{M}_{CONS}$. Soit $R\left(\bold{w}\right)$ le risque de l\rq{}estimateur $(w_{1}Z_{1},\ldots,w_{n}Z_{n})$. Soit $\bold{w}^{*}$ qui minimise le risque $R\left(\bold{w}\right)$ et $\widehat{\bold{w}}$ qui minimise $\widehat{\widehat{R}}\left(\bold{w}\right)$, alors 
+\begin{equation*}
+\left|R\left(\bold{w}^{*}\right)-R\left(\widehat{\bold{w}}\right)\right|\rightarrow 0,\hspace{0.2cm}n\rightarrow+\infty.
+\end{equation*}
+\end{Theo} 
+Il s\rq{}agit d\rq{}un résultat de consistance qui indique que l\rq{}optimisation du risque sur les classes de modulateurs considérées optimisent asymptotiquement le vrai risque et non son estimation.\\
+
+L\rq{}optimisation sur la classe de modulateur $\mathcal{M}_{CONS}$ consiste à trouver $\widehat{\bold{w}}=(w,\ldots,w)$ tel que 
+\begin{equation*}
+\widehat{w}=\underset{w\in[0,1]}{\operatorname{argmin}} \hspace{0.1cm}(1-w)^{2}\sum_{k=1}^{n}\left(Z_{k}^{2}-\widehat{\sigma}_{k,n}^{2}\right)_{+}+w^{2}\sum_{k=1}^{n}\widehat{\sigma}_{k,n}^{2}.
+\end{equation*}
+La solution est donnée par
+\begin{equation}\label{OptimalConstantModulator}
+\widehat{w}=\frac{\sum_{k=1}^{n}\left(Z_{k}^{2}-\widehat{\sigma}_{k,n}^{2}\right)_{+}}{\sum_{k=1}^{n}\left(Z_{k}^{2}-\widehat{\sigma}_{k,n}^{2}\right)_{+}+\sum_{k=1}^{n}\widehat{\sigma}_{k,n}^{2}}.
+\end{equation}
+\\
+L\rq{}optimisation sur la classe $\mathcal{M}_{MON}$ est un problème d\rq{}optimisation sous la contrainte de monoticité $w_{1}>\ldots>w_{n}$ qui se résoud numériquement à l\rq{}aide d\rq{}algorithme tel que l\rq{}algorithme \gls{pav}, décrit dans le papier de \citet{RoWrDy88}.\\
+
+L\rq{}optimisation sur la classe $\mathcal{M}_{SME}$ consiste à trouver l\rq{}ordre de troncature $\widehat{K}\leq n$ tel que 
+\begin{equation}
+\widehat{K}=\underset{K\in\{0,\ldots,n\}}{\operatorname{argmin}} \hspace{0.1cm} \sum_{k=K+1}^{n}\left(Z_{k}^{2}-\widehat{\sigma}_{k,n}^{2}\right)_{+}+\sum_{k=1}^{K}\widehat{\sigma}_{k,n}^{2}.
+\end{equation}
+Le plus simple est de calculer le risque pour chaque valeur de $K=0,\ldots,n$, puis de sélectionner l\rq{}ordre de troncature $\widehat{K}$ associé à la plus petite valeur du risque.\\
+
+L'analogie avec le \textit{Normal Mean problem} présenté dans \cite{Wa06} admet ses limites. Le problème considéré ici est plus compliqué de part la corrélation entre les $\{Z_{k}\}_{k\in\{1,\ldots,n\}}$ et la variance qui varie avec $k$. Il reste encore du travail afin de pouvoir établir des propriétés de minimaxité de l\rq{}estimateur via les \gls{fenq} et leur polynômes orthogonaux et appliquer le théorème de Pinsker. Un autre objectif est la mise en place d\rq{}une procédure pour construire un intervalle de confiance pour l\rq{}estimateur de la densité de probabilité.
+\section{Application aux distributions composée}
+\section{Illustrations numériques}
+
+
+\bibliographystyle{francaissc}
+\bibliography{Chapitre3/BiblioChap3}

@@ -1,0 +1,244 @@
+\begin{thebibliography}{44}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Abate} \bbletal{}(1995)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh95}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1995,
+  \enquote{On the {L}aguerre method for numerically inverting {L}aplace
+  transforms}, \emph{INFORMS Journal on Computing}, \bblvol{}~8, \bblno{}~4,
+  \bblpp{} 413--427.
+
+\bibitem[{\textsc{Abate} \bbland{} \textsc{Whitt}(1992)}]{AbWh92}
+\textsc{Abate, J.} \bbland{} \textsc{W.~Whitt}. 1992, \enquote{The
+  {F}ourier-series method for inverting transforms of probability
+  distributions.}, \emph{Queueing Systems}, \bblvol{}~10, \bblpp{} 5--88.
+
+\bibitem[{\textsc{Anderson} \bbland{} \textsc{Figueiredo}(1980)}]{AnFi80}
+\textsc{Anderson, G.~L.} \bbland{} \textsc{R.~J. Figueiredo}. 1980, \enquote{An
+  adaptative orthogonal-series estimator for probability density functions},
+  \emph{The Annals of Statistics}, \bblpp{} 347--376.
+
+\bibitem[{\textsc{Balakrihsnan} \bbland{} \textsc{Lai}(2009)}]{BaLa09}
+\textsc{Balakrihsnan, N.} \bbland{} \textsc{C.~D. Lai}. 2009, \emph{Continuous
+  bivariate distributions}, Springer Science and Business Media.
+
+\bibitem[{\textsc{Barndorff-Nielsen}(1978)}]{Ba78}
+\textsc{Barndorff-Nielsen, O.} 1978, \emph{Information and exponential Families
+  in Statistical Theory}, Wiley.
+
+\bibitem[{\textsc{Beran}(2000)}]{Be00}
+\textsc{Beran, R.} 2000, \enquote{React scatterplot smoothers: Superefficiency
+  through basis economy}, \emph{Journal of the American Statistical
+  Association}, \bblvol{}~95, \bblno{} 449, \bblpp{} 155--171.
+
+\bibitem[{\textsc{Beran} \bbland{} \textsc{Dumbgen}(1998)}]{BeDu98}
+\textsc{Beran, R.} \bbland{} \textsc{L.~Dumbgen}. 1998, \enquote{Modulation
+  estimators and confidence sets}, \emph{The Annals of Statistics}, \bblpp{}
+  1826--1856.
+
+\bibitem[{\textsc{Brunk}(1978)}]{Br78}
+\textsc{Brunk, H.~D.} 1978, \enquote{Univariate density estimation by
+  orthogonal series}, \emph{Biometrika}, \bblvol{}~65, \bblno{}~3, \bblpp{}
+  521--528.
+
+\bibitem[{\textsc{Buckland}(1992)}]{Bu92}
+\textsc{Buckland, S.~T.} 1992, \enquote{Fitting density functions with
+  polynomials}, \emph{Applied Statistics}, \bblpp{} 63--76.
+
+\bibitem[{\textsc{Cencov}(1962)}]{Ce62}
+\textsc{Cencov, N.~N.} 1962, \enquote{Estimation of an unknown density function
+  from observations}, \emph{Dokl. Akad. Nauk, SSSR}, \bblvol{} 147, \bblpp{}
+  45--48.
+
+\bibitem[{\textsc{Diaconis} \bbland{} \textsc{Griffiths}(2012)}]{DiaGri12}
+\textsc{Diaconis, P.} \bbland{} \textsc{R.~Griffiths}. 2012,
+  \enquote{Exchangeables pairs of {B}ernouilli random variables, {K}rawtchouck
+  polynomials, and {E}hrenfest urns}, \emph{Australian and New Zealand Journal
+  of Statistics}, \bblvol{}~54, \bblno{}~1, \bblpp{} 81--101.
+
+\bibitem[{\textsc{Diaconis} \bbletal{}(2008)\textsc{Diaconis}, \textsc{Khare}
+  \bbland{} \textsc{Saloff-Coste}}]{DiKhSa08}
+\textsc{Diaconis, P.}, \textsc{K.~Khare} \bbland{} \textsc{L.~Saloff-Coste}.
+  2008, \enquote{Gibbs sampling, exponential families and orthogonal
+  polynomials}, \emph{Statistical Science}, \bblvol{}~23, \bblno{}~2, \bblpp{}
+  151--178.
+
+\bibitem[{\textsc{Diggle} \bbland{} \textsc{Hall}(1986)}]{DiHa86}
+\textsc{Diggle, P.} \bbland{} \textsc{P.~Hall}. 1986, \enquote{The selection of
+  terms in an orthogonal series density estimator}, \emph{Journal of the
+  American Statistical Association}, \bblvol{}~81, \bblno{} 393, \bblpp{}
+  230--233.
+
+\bibitem[{\textsc{Dueck} \bbletal{}(2015)\textsc{Dueck}, \textsc{Edelmann}
+  \bbland{} \textsc{Richards}}]{DuEdRi15}
+\textsc{Dueck, J.}, \textsc{D.~Edelmann} \bbland{} \textsc{D.~Richards}. 2015,
+  \enquote{Distance correlation coefficients for lancaster distributions},
+  \emph{arXiv preprint}.
+
+\bibitem[{\textsc{Eagleson}(1964)}]{Ea64}
+\textsc{Eagleson, G.~K.} 1964, \enquote{Polynomial expansions of bivariate
+  distributions}, \emph{The Annals of Mathematical Statistics}, \bblpp{}
+  1208--1215.
+
+\bibitem[{\textsc{Efromovich}(1999)}]{Ef99}
+\textsc{Efromovich, S.} 1999, \emph{Nonparametric curve estimation: methods,
+  theory and applications}, Springer Science and Business Media.
+
+\bibitem[{\textsc{Embrechts} \bbletal{}(1985)\textsc{Embrechts},
+  \textsc{Maejima} \bbland{} \textsc{Teugels}}]{EmMaTe85}
+\textsc{Embrechts, P.}, \textsc{M.~Maejima} \bbland{} \textsc{J.~L. Teugels}.
+  1985, \enquote{Asymptotic behavior of compound distributions}, \emph{Astin
+  Bulletin}, \bblvol{}~15, \bblno{}~1, \bblpp{} 45--48.
+
+\bibitem[{\textsc{Goffard} \bbletal{}(2015)\textsc{Goffard}, \textsc{Loisel}
+  \bbland{} \textsc{Pommeret}}]{GoLoPo15a}
+\textsc{Goffard, P.-O.}, \textsc{S.~Loisel} \bbland{} \textsc{D.~Pommeret}.
+  2015, \enquote{A polynomial expansion to approximate the ultimate ruin
+  probability in the compound {P}oisson ruin model}, \emph{Journal of
+  Computational and Applied Mathematics}.
+
+\bibitem[{\textsc{Greblicki} \bbland{} \textsc{Pawlak}(1984)}]{GrPa84}
+\textsc{Greblicki, W.} \bbland{} \textsc{M.~Pawlak}. 1984, \enquote{Hermite
+  series estimates of a probability density and its derivatives}, \emph{Journal
+  of Multivariate Analysis}, \bblvol{}~15, \bblno{}~2, \bblpp{} 174--182.
+
+\bibitem[{\textsc{Hall}(1980)}]{Ha80}
+\textsc{Hall, P.} 1980, \enquote{Estimating a density on the positive half line
+  by the method of orthogonal series}, \emph{Annals of the institute of
+  Statistical Mathematics}, \bblvol{}~32, \bblno{}~1, \bblpp{} 351--362.
+
+\bibitem[{\textsc{Hjort} \bbland{} \textsc{Glad}(1995)}]{HjGl95}
+\textsc{Hjort, N.~L.} \bbland{} \textsc{I.~K. Glad}. 1995,
+  \enquote{Nonparametric density estimation with a parametric start}, \emph{The
+  Annals of Statistics}, \bblpp{} 882--904.
+
+\bibitem[{\textsc{Jin} \bbletal{}(2014)\textsc{Jin}, \textsc{Provost} \bbland{}
+  \textsc{Ren}}]{JiPrRe14}
+\textsc{Jin, T.}, \textsc{S.~B. Provost} \bbland{} \textsc{J.~Ren}. 2014,
+  \enquote{Moment-based density approximations for aggregate losses},
+  \emph{Scandinavian Actuarial Journal}, \bblvol{} (ahead-of-print), \bblpp{}
+  1--30.
+
+\bibitem[{\textsc{Koudou}(1995)}]{Ko95}
+\textsc{Koudou, A.~E.} 1995, \emph{Probl{\`e}mes de marges et familles
+  exponentielles naturelles}, \bblphdthesis{}, Toulouse.
+
+\bibitem[{\textsc{Koudou}(1996)}]{Ko96}
+\textsc{Koudou, A.~E.} 1996, \enquote{Probabilit{\'e}s de {L}ancaster},
+  \emph{Expositiones Mathematicae}, \bblvol{}~14, \bblpp{} 247--276.
+
+\bibitem[{\textsc{Koudou}(1998)}]{Ko98}
+\textsc{Koudou, A.~E.} 1998, \enquote{Lancaster bivariate probability
+  distributions with {P}oisson, negative binomial and gamma margins},
+  \emph{Test}, \bblvol{}~7, \bblno{}~1, \bblpp{} 95--110.
+
+\bibitem[{\textsc{Kronmal} \bbland{} \textsc{Tarter}(1968)}]{KrTa68}
+\textsc{Kronmal, R.} \bbland{} \textsc{M.~Tarter}. 1968, \enquote{The
+  estimation of probabiliy densities and cumulatives by {F}ourier series
+  methods}, \emph{Journal of the American Statistical Association}, \bblpp{}
+  925--952.
+
+\bibitem[{\textsc{Lancaster}(1958)}]{La58}
+\textsc{Lancaster, H.} 1958, \enquote{The structure of bivariate
+  distributions}, \emph{The Annals of Mathematical Statistics}, \bblpp{}
+  719--736.
+
+\bibitem[{\textsc{Lancaster} \bbland{} \textsc{Seneta}(2005)}]{La05}
+\textsc{Lancaster, H.} \bbland{} \textsc{E.~Seneta}. 2005, \emph{Chi-Square
+  Distribution}, John Wiley And sons, Ltd.
+
+\bibitem[{\textsc{Mnatsakanov} \bbland{} \textsc{Sarkisian}(2013)}]{MnSa13}
+\textsc{Mnatsakanov, R.~M.} \bbland{} \textsc{K.~Sarkisian}. 2013, \enquote{A
+  note on recovering the distribution from exponential moments}, \emph{Applied
+  Mathematics and Computation}, \bblvol{} 219, \bblpp{} 8730--8737.
+
+\bibitem[{\textsc{Morris}(1982)}]{Mo82}
+\textsc{Morris, C.~N.} 1982, \enquote{Natural {E}xponential {F}amilies with
+  {Q}uadratic {V}ariance {F}unctions}, \emph{The Annals of Mathematical
+  Statistics}, \bblvol{}~10, \bblno{}~1, \bblpp{} 65--80.
+
+\bibitem[{\textsc{Papush} \bbletal{}(2001)\textsc{Papush}, \textsc{Patrick}
+  \bbland{} \textsc{Podgaits}}]{PaPaPo01}
+\textsc{Papush, D.~E.}, \textsc{G.~S. Patrick} \bbland{} \textsc{F.~Podgaits}.
+  2001, \enquote{Approximations of the aggregate loss distribution}, \emph{CAS
+  Forum (winter)}, \bblpp{} 175--186.
+
+\bibitem[{\textsc{Provost} \bbland{} \textsc{Jiang}(2012)}]{PrJi12}
+\textsc{Provost, S.} \bbland{} \textsc{M.~Jiang}. 2012, \enquote{Orthogonal
+  polynomial density estimates: Alternative representation and degree
+  selection}, \emph{International Journal of Computational and Mathematical
+  Sciences}, \bblvol{}~6, \bblpp{} 12--29.
+
+\bibitem[{\textsc{Provost}(2005)}]{Pr05}
+\textsc{Provost, S.~B.} 2005, \enquote{Moment-based density approximants},
+  \emph{Mathematica Journal}, \bblvol{}~9, \bblno{}~4, \bblpp{} 727--756.
+
+\bibitem[{\textsc{Robertson} \bbletal{}(1988)\textsc{Robertson},
+  \textsc{Wright} \bbland{} \textsc{Dykstra}}]{RoWrDy88}
+\textsc{Robertson, T.}, \textsc{F.~T. Wright} \bbland{} \textsc{R.~L. Dykstra}.
+  1988, \emph{Order restricted statistical inference}, Wiley, New York.
+
+\bibitem[{\textsc{Rolski} \bbletal{}(1999)\textsc{Rolski}, \textsc{Schmidli},
+  \textsc{Schmidt} \bbland{} \textsc{J.Teugels}}]{RoScScTe99}
+\textsc{Rolski, T.}, \textsc{H.~Schmidli}, \textsc{V.~Schmidt} \bbland{}
+  \textsc{J.Teugels}. 1999, \emph{Stochastic Processes for Insurance and
+  Finance}, Wiley series in probability and statistics.
+
+\bibitem[{\textsc{Schwartz}(1967)}]{Sc67}
+\textsc{Schwartz, S.} 1967, \enquote{Estimation of probability density by an
+  orthogonal series}, \emph{The Annals of Mathematical Statistics}, \bblpp{}
+  1261--1265.
+
+\bibitem[{\textsc{Stein}(1981)}]{St81}
+\textsc{Stein, C.~M.} 1981, \enquote{Estimation of the mean of a multivariate
+  normal distribution.}, \emph{The Annals of Statistics}, \bblpp{} 1135--1151.
+
+\bibitem[{\textsc{Sundt}(1982)}]{Su82}
+\textsc{Sundt, B.} 1982, \enquote{Asymptotic behaviour of compound
+  distributions and stop-loss premiums}, \emph{Astin Bulletin}, \bblvol{}~13,
+  \bblno{}~2, \bblpp{} 89--98.
+
+\bibitem[{\textsc{Szeg{\"o}}(1939)}]{Sz39}
+\textsc{Szeg{\"o}, G.} 1939, \emph{Orthogonal Polynomials}, \bblvol{} XXIII,
+  American mathematical society Colloquium publications.
+
+\bibitem[{\textsc{Sz{\'e}kely} \bbletal{}(2007)\textsc{Sz{\'e}kely},
+  \textsc{Rizzo} \bbland{} \textsc{Bakirov}}]{SzRiBa07}
+\textsc{Sz{\'e}kely, G.~J.}, \textsc{M.~L. Rizzo} \bbland{} \textsc{N.~K.
+  Bakirov}. 2007, \enquote{Measuring and testing dependance by correlation of
+  distances}, \emph{The Annals of Statistics}, \bblvol{}~35, \bblno{}~6,
+  \bblpp{} 2769--2794.
+
+\bibitem[{\textsc{Walter}(1977)}]{Wa77}
+\textsc{Walter, G.} 1977, \enquote{Properties of {H}ermite series estimation of
+  probability densityhermite series estimation of probability density},
+  \emph{The Annals of Statistics}, \bblpp{} 1258--1264.
+
+\bibitem[{\textsc{Wasserman}(2006)}]{Wa06}
+\textsc{Wasserman, L.} 2006, \emph{All of nonparametric statistics}, Springer.
+
+\bibitem[{\textsc{Watson}(1969)}]{Wa69}
+\textsc{Watson, G.~S.} 1969, \enquote{Density estimation by othogonal series},
+  \emph{The Annals of Statistics}, \bblpp{} 1496--1498.
+
+\bibitem[{\textsc{Whittle}(1958)}]{Wh58}
+\textsc{Whittle, P.} 1958, \enquote{On the smoothing of probability density
+  functions}, \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, \bblpp{} 334--343.
+
+\end{thebibliography}

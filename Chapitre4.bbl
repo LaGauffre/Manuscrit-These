@@ -1,0 +1,177 @@
+\begin{thebibliography}{28}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Abate} \bbletal{}(1995)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh95}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1995,
+  \enquote{On the {L}aguerre method for numerically inverting {L}aplace
+  transforms}, \emph{INFORMS Journal on Computing}, \bblvol{}~8, \bblno{}~4,
+  \bblpp{} 413--427.
+
+\bibitem[{\textsc{Abate} \bbland{} \textsc{Whitt}(1992)}]{AbWh92}
+\textsc{Abate, J.} \bbland{} \textsc{W.~Whitt}. 1992, \enquote{The
+  {F}ourier-series method for inverting transforms of probability
+  distributions.}, \emph{Queueing Systems}, \bblvol{}~10, \bblpp{} 5--88.
+
+\bibitem[{\textsc{Albrecher} \bbletal{}(2010)\textsc{Albrecher}, \textsc{Avram}
+  \bbland{} \textsc{Kortschak}}]{AlAvKo10}
+\textsc{Albrecher, H.}, \textsc{F.~Avram} \bbland{} \textsc{D.~Kortschak}.
+  2010, \enquote{On the efficient evaluation of ruin probabilities for
+  completely monotone claim distributions}, \emph{Journal of Computational and
+  Applied Mathematics}, \bblvol{} 233, \bblno{}~10, \bblpp{} 2724--2736.
+
+\bibitem[{\textsc{Albrecher} \bbletal{}(2001)\textsc{Albrecher},
+  \textsc{Teugels} \bbland{} \textsc{Tichy}}]{AlTeTi01}
+\textsc{Albrecher, H.}, \textsc{J.~Teugels} \bbland{} \textsc{R.~Tichy}. 2001,
+  \enquote{On a gamma series expansion for the time dependent probability of
+  collective ruin}, \emph{Insurance: Mathematics and Economics}, , \bblno{}~29,
+  \bblpp{} 345--355.
+
+\bibitem[{\textsc{Asmussen} \bbland{} \textsc{Albrecher}(2010)}]{AsAl10}
+\textsc{Asmussen, S.} \bbland{} \textsc{H.~Albrecher}. 2010, \emph{Ruin
+  Probabilities}, \emph{Advanced Series on Statistical Science and Applied
+  Probability}, \bblvol{}~14, World Scientific.
+
+\bibitem[{\textsc{Avram} \bbletal{}(2011)\textsc{Avram}, \textsc{Chedom}
+  \bbland{} \textsc{Horvarth}}]{AvChHo11}
+\textsc{Avram, F.}, \textsc{D.~Chedom} \bbland{} \textsc{A.~Horvarth}. 2011,
+  \enquote{On moments based {P}ad{\'e} approximations of ruin probabilities},
+  \emph{Journal of Computational and Applied Mathematics}, \bblvol{} 235,
+  \bblno{}~10, \bblpp{} 321--3228.
+
+\bibitem[{\textsc{Barndorff-Nielsen}(1978)}]{Ba78}
+\textsc{Barndorff-Nielsen, O.} 1978, \emph{Information and exponential Families
+  in Statistical Theory}, Wiley.
+
+\bibitem[{\textsc{Beekman}(1969)}]{Be69}
+\textsc{Beekman, J.} 1969, \enquote{Ruin function approximation},
+  \emph{Transaction of Society of Actuaries}, \bblvol{}~21, \bblno{} 59 AB,
+  \bblpp{} 41--48.
+
+\bibitem[{\textsc{Bowers}(1966)}]{Bo66}
+\textsc{Bowers, N.} 1966, \enquote{Expansion of probability density functions
+  as a sum of gamma densities with applications in risk theory},
+  \emph{Transaction of Society of Actuaries}, \bblvol{}~18, \bblno{}~52,
+  \bblpp{} 125--137.
+
+\bibitem[{\textsc{Dickson}(1992)}]{Di92}
+\textsc{Dickson, D.} 1992, \enquote{On the distribution of the surplus prior to
+  ruin}, \emph{Insurance: Mathematics and Economics}, \bblvol{}~11, \bblno{}~3,
+  \bblpp{} 191--207.
+
+\bibitem[{\textsc{Dickson}(1995)}]{Di95}
+\textsc{Dickson, D. C.~M.} 1995, \enquote{A review of {P}anjer's recursion
+  formula and it's applications}, \emph{British Actuarial Journal},
+  \bblvol{}~1, \bblno{}~1, \bblpp{} 107--124.
+
+\bibitem[{\textsc{Embrechts} \bbland{} \textsc{Frei}(2009)}]{EmFr09}
+\textsc{Embrechts, P.} \bbland{} \textsc{M.~Frei}. 2009, \enquote{{P}anjer
+  recursion versus {F}{F}{T} for compound distribution}, \emph{Mathematical
+  Methods of Operations Research}, \bblvol{}~69, \bblpp{} 497--508.
+
+\bibitem[{\textsc{Embrechts} \bbletal{}(1993)\textsc{Embrechts},
+  \textsc{Gr{\"u}bel} \bbland{} \textsc{Pitts}}]{EmGrPi93}
+\textsc{Embrechts, P.}, \textsc{P.~Gr{\"u}bel} \bbland{} \textsc{S.~M. Pitts}.
+  1993, \enquote{Some applications of the fast {F}ourier transform algorithm in
+  insurance mathematics}, \emph{Statistica Neerlandica}, \bblvol{}~41, \bblpp{}
+  59--75.
+
+\bibitem[{\textsc{Gerber} \bbland{} \textsc{Shiu}(1998)}]{GeSh98}
+\textsc{Gerber, H.~U.} \bbland{} \textsc{E.~Shiu}. 1998, \enquote{On the time
+  value of ruin}, \emph{North American Actuarial Journal}, \bblvol{}~2,
+  \bblno{}~1, \bblpp{} 48--72.
+
+\bibitem[{\textsc{Gzyl} \bbletal{}(2013)\textsc{Gzyl}, \textsc{Novi-Inverardi}
+  \bbland{} \textsc{Tagliani}}]{GzNITa13}
+\textsc{Gzyl, H.}, \textsc{P.~Novi-Inverardi} \bbland{} \textsc{A.~Tagliani}.
+  2013, \enquote{Determination of the probability of ultimate ruin probability
+  by maximum entropy applied to fractional moments}, \emph{Insurance:
+  Mathematics and Economics}, \bblvol{}~53, \bblno{}~2, \bblpp{} 457--463.
+
+\bibitem[{\textsc{Mnatsakanov} \bbletal{}(2008)\textsc{Mnatsakanov},
+  \textsc{Ruymgaart} \bbland{} \textsc{Ruymgaart}}]{MnRuRu08}
+\textsc{Mnatsakanov, R.}, \textsc{L.~Ruymgaart} \bbland{}
+  \textsc{F.~Ruymgaart}. 2008, \enquote{Nonparametric estimation of ruin
+  probabilities given a random sample of claims}, \emph{Mathematical Methods of
+  Statistics}, \bblvol{}~17, \bblno{}~1, \bblpp{} 35--43.
+
+\bibitem[{\textsc{Mnatsakanov} \bbland{} \textsc{Sarkisian}(2013)}]{MnSa13}
+\textsc{Mnatsakanov, R.~M.} \bbland{} \textsc{K.~Sarkisian}. 2013, \enquote{A
+  note on recovering the distribution from exponential moments}, \emph{Applied
+  Mathematics and Computation}, \bblvol{} 219, \bblpp{} 8730--8737.
+
+\bibitem[{\textsc{Mnatsakanov} \bbletal{}(2014)\textsc{Mnatsakanov},
+  \textsc{Sarkisian} \bbland{} \textsc{Hakobyan}}]{MnSaHa14}
+\textsc{Mnatsakanov, R.~M.}, \textsc{K.~Sarkisian} \bbland{}
+  \textsc{A.~Hakobyan}. 2014, \enquote{Approximation of the ruin probability
+  using the scaled {L}aplace transform inversion}, \emph{Working Paper}.
+
+\bibitem[{\textsc{Morris}(1982)}]{Mo82}
+\textsc{Morris, C.~N.} 1982, \enquote{Natural {E}xponential {F}amilies with
+  {Q}uadratic {V}ariance {F}unctions}, \emph{The Annals of Mathematical
+  Statistics}, \bblvol{}~10, \bblno{}~1, \bblpp{} 65--80.
+
+\bibitem[{\textsc{Panjer}(1981)}]{Pa81}
+\textsc{Panjer, H.~H.} 1981, \enquote{Recursive evaluation of a family of
+  compound distributions}, \emph{Astin Bulletin}, \bblvol{}~12, \bblno{}~1,
+  \bblpp{} 22--26.
+
+\bibitem[{\textsc{Picard} \bbland{} \textsc{Lef{\`e}vre}(1997)}]{PiLe97}
+\textsc{Picard, P.} \bbland{} \textsc{C.~Lef{\`e}vre}. 1997, \enquote{The
+  probability of ruin in finite time with discrete claim size distribution},
+  \emph{Scandinavian Actuarial Journal}, \bblpp{} 58--69.
+
+\bibitem[{\textsc{Pommeret}(2001)}]{Po01}
+\textsc{Pommeret, D.} 2001, \enquote{Orthogonal and pseudo-orthogonal
+  multi-dimensional {A}ppell polynomials}, \emph{Applied Mathematics and
+  Computation}, \bblvol{} 117, \bblno{}~2, \bblpp{} 285--299.
+
+\bibitem[{\textsc{Rolski} \bbletal{}(1999)\textsc{Rolski}, \textsc{Schmidli},
+  \textsc{Schmidt} \bbland{} \textsc{J.Teugels}}]{RoScScTe99}
+\textsc{Rolski, T.}, \textsc{H.~Schmidli}, \textsc{V.~Schmidt} \bbland{}
+  \textsc{J.Teugels}. 1999, \emph{Stochastic Processes for Insurance and
+  Finance}, Wiley series in probability and statistics.
+
+\bibitem[{\textsc{Ruillere} \bbland{} \textsc{Loisel}(2004)}]{RuLo04}
+\textsc{Ruillere, D.} \bbland{} \textsc{S.~Loisel}. 2004, \enquote{Another look
+  at the {P}icard-{L}ef{\`e}vre formula for finite-time ruin probbaility},
+  \emph{Insurance: Mathematics and Economics}, \bblvol{}~35, \bblno{}~2,
+  \bblpp{} 187--203.
+
+\bibitem[{\textsc{Szeg{\"o}}(1939)}]{Sz39}
+\textsc{Szeg{\"o}, G.} 1939, \emph{Orthogonal Polynomials}, \bblvol{} XXIII,
+  American mathematical society Colloquium publications.
+
+\bibitem[{\textsc{Taylor}(1978)}]{Ta78}
+\textsc{Taylor, G.} 1978, \enquote{Representation and explicit calculation of
+  finite-time ruin probabilities}, \emph{Scandinavian Actuarial Journal},
+  \bblpp{} 1--18.
+
+\bibitem[{\textsc{Weeks}(1966)}]{We66}
+\textsc{Weeks, W.~T.} 1966, \enquote{Numerical inversion of {L}aplace
+  transforms using {L}aguerre functions}, \emph{Journal of the ACM},
+  \bblvol{}~13, \bblno{}~3, \bblpp{} 419--429.
+
+\bibitem[{\textsc{Zhang} \bbletal{}(2014)\textsc{Zhang}, \textsc{Yang}
+  \bbland{} \textsc{Yang}}]{ZhYaYa14}
+\textsc{Zhang, Z.}, \textsc{H.~Yang} \bbland{} \textsc{H.~Yang}. 2014,
+  \enquote{On a nonparametric estimator for ruin probability in the classical
+  risk model}, \emph{Scandinavian Actuarial Journal}, \bblvol{} 2014,
+  \bblno{}~4, \bblpp{} 309--338.
+
+\end{thebibliography}

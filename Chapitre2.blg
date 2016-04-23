@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Chapitre2.aux
+The style file: francaissc.bst
+Database file #1: Chapitre2/BiblioChap2.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--missing school in Ko95
+You've used 44 entries,
+            3493 wiz_defined-function locations,
+            987 strings with 11332 characters,
+and the built_in function-call counts, 41987 in all, are:
+= -- 4607
+> -- 781
+< -- 102
++ -- 483
+- -- 232
+* -- 2397
+:= -- 4268
+add.period$ -- 88
+call.type$ -- 44
+change.case$ -- 288
+chr.to.int$ -- 45
+cite$ -- 45
+duplicate$ -- 4549
+empty$ -- 2789
+format.name$ -- 343
+if$ -- 8707
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 403
+newline$ -- 150
+num.names$ -- 176
+pop$ -- 1638
+preamble$ -- 1
+purify$ -- 253
+quote$ -- 0
+skip$ -- 2630
+stack$ -- 0
+substring$ -- 2083
+swap$ -- 3732
+text.length$ -- 68
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 372
+warning$ -- 1
+while$ -- 231
+width$ -- 0
+write$ -- 479
+(There was 1 warning)

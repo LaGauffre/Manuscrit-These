@@ -1,0 +1,501 @@
+\begin{thebibliography}{89}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Abate} \bbletal{}(1995)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh95}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1995,
+  \enquote{On the {L}aguerre method for numerically inverting {L}aplace
+  transforms}, \emph{INFORMS Journal on Computing}, \bblvol{}~8, \bblno{}~4,
+  \bblpp{} 413--427.
+
+\bibitem[{\textsc{Abate} \bbletal{}(1998)\textsc{Abate}, \textsc{Choudhury}
+  \bbland{} \textsc{Whitt}}]{AbChWh98}
+\textsc{Abate, J.}, \textsc{G.~Choudhury} \bbland{} \textsc{W.~Whitt}. 1998,
+  \enquote{Numerical inversion of multidimensional {L}aplace transform by the
+  {L}aguerre method}, \emph{Performance Evaluation}, \bblvol{}~31, \bblno{}~3,
+  \bblpp{} 229--243.
+
+\bibitem[{\textsc{Abate} \bbland{} \textsc{Whitt}(1992)}]{AbWh92}
+\textsc{Abate, J.} \bbland{} \textsc{W.~Whitt}. 1992, \enquote{The
+  {F}ourier-series method for inverting transforms of probability
+  distributions.}, \emph{Queueing Systems}, \bblvol{}~10, \bblpp{} 5--88.
+
+\bibitem[{\textsc{Abrahamowitz} \bbland{} \textsc{Stegun}(1972)}]{AbSt72}
+\textsc{Abrahamowitz, M.} \bbland{} \textsc{I.~A. Stegun}. 1972, \emph{Handbook
+  of mathematical functions}, \bblvol{}~1, New York, Dover.
+
+\bibitem[{\textsc{Albrecher} \bbletal{}(2010)\textsc{Albrecher}, \textsc{Avram}
+  \bbland{} \textsc{Kortschak}}]{AlAvKo10}
+\textsc{Albrecher, H.}, \textsc{F.~Avram} \bbland{} \textsc{D.~Kortschak}.
+  2010, \enquote{On the efficient evaluation of ruin probabilities for
+  completely monotone claim distributions}, \emph{Journal of Computational and
+  Applied Mathematics}, \bblvol{} 233, \bblno{}~10, \bblpp{} 2724--2736.
+
+\bibitem[{\textsc{Albrecher} \bbletal{}(2001)\textsc{Albrecher},
+  \textsc{Teugels} \bbland{} \textsc{Tichy}}]{AlTeTi01}
+\textsc{Albrecher, H.}, \textsc{J.~Teugels} \bbland{} \textsc{R.~Tichy}. 2001,
+  \enquote{On a gamma series expansion for the time dependent probability of
+  collective ruin}, \emph{Insurance: Mathematics and Economics}, , \bblno{}~29,
+  \bblpp{} 345--355.
+
+\bibitem[{\textsc{Ambagaspitiya}(1998)}]{Am98}
+\textsc{Ambagaspitiya, R.} 1998, \enquote{On the distribution of a sum of
+  correlated aggregate claims}, \emph{Insurance: Mathematics and Economics},
+  \bblvol{}~23, \bblno{}~1, \bblpp{} 15--19.
+
+\bibitem[{\textsc{Ambagaspitiya}(1999)}]{Am99}
+\textsc{Ambagaspitiya, R.} 1999, \enquote{On the distributions of two classes
+  of correlated aggregate claims}, \emph{Insurance: Mathematics and Economics},
+  \bblvol{}~24, \bblno{}~3, \bblpp{} 301--308.
+
+\bibitem[{\textsc{Asmussen}(2010)}]{As03}
+\textsc{Asmussen, S.} 2010, \emph{Applied probability and queues},
+  \bblvol{}~51, Springer Science and Business Media.
+
+\bibitem[{\textsc{Asmussen} \bbland{} \textsc{Albrecher}(2010)}]{AsAl10}
+\textsc{Asmussen, S.} \bbland{} \textsc{H.~Albrecher}. 2010, \emph{Ruin
+  Probabilities}, \emph{Advanced Series on Statistical Science and Applied
+  Probability}, \bblvol{}~14, World Scientific.
+
+\bibitem[{\textsc{Avram} \bbletal{}(2011)\textsc{Avram}, \textsc{Chedom}
+  \bbland{} \textsc{Horvarth}}]{AvChHo11}
+\textsc{Avram, F.}, \textsc{D.~Chedom} \bbland{} \textsc{A.~Horvarth}. 2011,
+  \enquote{On moments based {P}ad{\'e} approximations of ruin probabilities},
+  \emph{Journal of Computational and Applied Mathematics}, \bblvol{} 235,
+  \bblno{}~10, \bblpp{} 321--3228.
+
+\bibitem[{\textsc{Beekman}(1969)}]{Be69}
+\textsc{Beekman, J.} 1969, \enquote{Ruin function approximation},
+  \emph{Transaction of Society of Actuaries}, \bblvol{}~21, \bblno{} 59 AB,
+  \bblpp{} 41--48.
+
+\bibitem[{\textsc{Bertail} \bbletal{}(2008)\textsc{Bertail},
+  \textsc{Cl{\'e}men{\c c}on} \bbland{} \textsc{Tressou}}]{BeClTr08}
+\textsc{Bertail, P.}, \textsc{S.~Cl{\'e}men{\c c}on} \bbland{}
+  \textsc{J.~Tressou}. 2008, \enquote{A storage model with random release rate
+  for modelling exposure to food contaminants}, \emph{Mathematical Biosciences
+  and Engineering}, \bblvol{}~5, \bblno{}~1, \bblp{}~35.
+
+\bibitem[{\textsc{Bertail} \bbletal{}(2010)\textsc{Bertail},
+  \textsc{Cl{\'e}men{\c c}on} \bbland{} \textsc{Tressou}}]{BeClTr10}
+\textsc{Bertail, P.}, \textsc{S.~Cl{\'e}men{\c c}on} \bbland{}
+  \textsc{J.~Tressou}. 2010, \enquote{Statistical analysis of a dynamic model
+  for dietary contaminant exposure}, \emph{Journal of biological dynamics},
+  \bblvol{}~4, \bblno{}~2, \bblpp{} 212--234.
+
+\bibitem[{\textsc{Bertail} \bbland{} \textsc{Loisel}(2014)}]{BeLo14}
+\textsc{Bertail, P.} \bbland{} \textsc{S.~Loisel}. 2014, \emph{Th{\'e}orie de
+  la ruine et applications}, Approches Statistiques du risque, Journ{\'e}e
+  d'{\'e}tude statistique.
+
+\bibitem[{\textsc{Bowers}(1966)}]{Bo66}
+\textsc{Bowers, N.} 1966, \enquote{Expansion of probability density functions
+  as a sum of gamma densities with applications in risk theory},
+  \emph{Transaction of Society of Actuaries}, \bblvol{}~18, \bblno{}~52,
+  \bblpp{} 125--137.
+
+\bibitem[{\textsc{Bowers} \bbletal{}(1997)\textsc{Bowers}, \textsc{Gerber},
+  \textsc{Hickman}, \textsc{Jones} \bbland{} \textsc{Nesbitt}}]{BoGeHiJoNe97}
+\textsc{Bowers, N.~L.}, \textsc{H.~U. Gerber}, \textsc{J.~C. Hickman},
+  \textsc{D.~A. Jones} \bbland{} \textsc{C.~J. Nesbitt}. 1997, \emph{Actuarial
+  Mathematics}, \bblsecondo{} \bbledn{}, The Society of Actuaries, Schaumburg,
+  Illinois.
+
+\bibitem[{\textsc{B{\"u}hlman}(1984)}]{Bu84}
+\textsc{B{\"u}hlman, H.} 1984, \enquote{Numerical evaluation of the compound
+  poisson distribution: recursion or fast fourier transform?},
+  \emph{Scandinavian Actuarial Journal}, , \bblno{}~2, \bblpp{} 116--126.
+
+\bibitem[{\textsc{Burnecki} \bbletal{}(2003)\textsc{Burnecki}, \textsc{Mista}
+  \bbland{} \textsc{Weron}}]{BuMiWe03}
+\textsc{Burnecki, K.}, \textsc{P.~Mista} \bbland{} \textsc{A.~Weron}. 2003,
+  \enquote{A new de vylder type approximation of the ruin probability in
+  infinite time}, \emph{Hugo Steinhaus Center, Wroclaw University of
+  technology}.
+
+\bibitem[{\textsc{Burnecki} \bbletal{}(2005)\textsc{Burnecki}, \textsc{Mista}
+  \bbland{} \textsc{Weron}}]{BuMiWe05}
+\textsc{Burnecki, K.}, \textsc{P.~Mista} \bbland{} \textsc{A.~Weron}. 2005,
+  \enquote{A new gamma type approximation of the ruin probability}, \emph{Acta
+  Physica Polonica B}, \bblvol{}~36, \bblno{}~5, \bblp{} 1473.
+
+\bibitem[{\textsc{Choudhury} \bbletal{}(1994)\textsc{Choudhury},
+  \textsc{Lucantoni} \bbland{} \textsc{Whitt}}]{ChLuWh94}
+\textsc{Choudhury, G.}, \textsc{D.~Lucantoni} \bbland{} \textsc{W.~Whitt}.
+  1994, \enquote{Multidimensional transform inversion with application to the
+  transient {M} / {G} / 1 queue}, \emph{The Annals of Applied Probability},
+  \bblvol{}~4, \bblno{}~3, \bblpp{} 719--740.
+
+\bibitem[{\textsc{Courtois} \bbland{} \textsc{Denuit}(2007)}]{CoDe07}
+\textsc{Courtois, C.} \bbland{} \textsc{M.~Denuit}. 2007, \enquote{Local moment
+  matching and s-convex extrema}, \emph{Astin Bulletin}, \bblvol{}~37,
+  \bblno{}~2, \bblp{} 387.
+
+\bibitem[{\textsc{Cummins} \bbland{} \textsc{Wiltbank}(1983)}]{CuWi83}
+\textsc{Cummins, J.} \bbland{} \textsc{L.~J. Wiltbank}. 1983,
+  \enquote{Estimating the total claims distribution using multivariate
+  frequency and severity distributions}, \emph{Journal of Risk and Insurance},
+  \bblpp{} 377--403.
+
+\bibitem[{\textsc{De{ }Pril}(1986)}]{DP86a}
+\textsc{De{ }Pril, N.} 1986, \enquote{Moments of a class of compound
+  distributions}, \emph{Scandinavian Actuarial Journal}, , \bblno{}~2, \bblpp{}
+  117--120.
+
+\bibitem[{\textsc{De{ }Pril}(1988)}]{DP88}
+\textsc{De{ }Pril, N.} 1988, \enquote{Improved approximations for the aggregate
+  claims distribution of a life insurance portfolio}, \emph{Scandinavian
+  Actuarial Journal}, \bblpp{} 61--68.
+
+\bibitem[{\textsc{De{ }Pril}(1989)}]{DP89}
+\textsc{De{ }Pril, N.} 1989, \enquote{The aggregate claims distribution in the
+  individual model with arbitrary positive claims}, \emph{Astin Bulletin},
+  \bblvol{}~19, \bblno{}~01, \bblpp{} 9--24.
+
+\bibitem[{\textsc{De{ }Vylder}(1978)}]{DV78}
+\textsc{De{ }Vylder, F.} 1978, \enquote{A practical solution to the problem of
+  ultimate ruin probability}, \emph{Scandinavian Actuarial Journal}, ,
+  \bblno{}~2, \bblpp{} 114--119.
+
+\bibitem[{\textsc{Dhaene} \bbland{} \textsc{Pril}(1994)}]{DhDP94}
+\textsc{Dhaene, J.} \bbland{} \textsc{N.~D. Pril}. 1994, \enquote{On a class of
+  approximative computation methods in the individual risk model},
+  \emph{Insurance: Mathematics and Economics}, \bblvol{}~14, \bblno{}~2,
+  \bblpp{} 181--196.
+
+\bibitem[{\textsc{Dhaene} \bbletal{}(2006)\textsc{Dhaene}, \textsc{Ribas}
+  \bbland{} \textsc{Vernic}}]{DhRiVe06}
+\textsc{Dhaene, J.}, \textsc{C.~Ribas} \bbland{} \textsc{R.~Vernic}. 2006,
+  \enquote{Recursions for the individual risk model}, \emph{Acta Mathematicae
+  Applicatae Sinica}, \bblvol{}~22, \bblno{}~4, \bblpp{} 543--564.
+
+\bibitem[{\textsc{Dhaene} \bbland{} \textsc{Sundt}(1997)}]{DhSu97}
+\textsc{Dhaene, J.} \bbland{} \textsc{B.~Sundt}. 1997, \enquote{On error bounds
+  for approximations to aggregate claims distributions}, \emph{Astin Bulletin},
+  \bblvol{}~21, \bblno{}~2, \bblpp{} 243--262.
+
+\bibitem[{\textsc{Dhaene} \bbland{} \textsc{Sundt}(1998)}]{DhSu98}
+\textsc{Dhaene, J.} \bbland{} \textsc{B.~Sundt}. 1998, \enquote{On
+  approximating distributions by approximating their de pril transforms},
+  \emph{Scandinavian Actuarial Journal}, , \bblno{}~1, \bblpp{} 1--23.
+
+\bibitem[{\textsc{Dhaene} \bbletal{}(1999)\textsc{Dhaene}, \textsc{Willmot}
+  \bbland{} \textsc{Sundt}}]{DhWiSu99}
+\textsc{Dhaene, J.}, \textsc{G.~Willmot} \bbland{} \textsc{B.~Sundt}. 1999,
+  \enquote{Recursions for distribution functions and stop-loss transforms},
+  \emph{Scandinavian Actuarial Journal}, , \bblno{}~1, \bblpp{} 52--65.
+
+\bibitem[{\textsc{Dickson}(1989)}]{Di89}
+\textsc{Dickson, D. C.~M.} 1989, \enquote{Recursive calculation of the
+  probability and severity of ruin}, \emph{Insurance: Mathematics and
+  Economics}, \bblvol{}~8, \bblno{}~2, \bblpp{} 145--148.
+
+\bibitem[{\textsc{Dickson}(1995)}]{Di95}
+\textsc{Dickson, D. C.~M.} 1995, \enquote{A review of {P}anjer's recursion
+  formula and it's applications}, \emph{British Actuarial Journal},
+  \bblvol{}~1, \bblno{}~1, \bblpp{} 107--124.
+
+\bibitem[{\textsc{Embrechts} \bbland{} \textsc{Frei}(2009)}]{EmFr09}
+\textsc{Embrechts, P.} \bbland{} \textsc{M.~Frei}. 2009, \enquote{{P}anjer
+  recursion versus {F}{F}{T} for compound distribution}, \emph{Mathematical
+  Methods of Operations Research}, \bblvol{}~69, \bblpp{} 497--508.
+
+\bibitem[{\textsc{Embrechts} \bbletal{}(1993)\textsc{Embrechts},
+  \textsc{Gr{\"u}bel} \bbland{} \textsc{Pitts}}]{EmGrPi93}
+\textsc{Embrechts, P.}, \textsc{R.~Gr{\"u}bel} \bbland{} \textsc{S.~M. Pitts}.
+  1993, \enquote{Some applications of the fast fourier transform algorithm in
+  insurance mathematics}, \emph{Statistica Neerlandica}, \bblvol{}~47,
+  \bblno{}~1, \bblpp{} 59--75.
+
+\bibitem[{\textsc{Gerber}(1982)}]{Ge82}
+\textsc{Gerber, H.~U.} 1982, \enquote{On the numerical evaluation of the
+  distribution of aggregate claims and its stop-loss premiums},
+  \emph{Insurance: Mathematics and Economics}, \bblvol{}~1, \bblno{}~1,
+  \bblpp{} 13--18.
+
+\bibitem[{\textsc{Gerber} \bbland{} \textsc{Jones}(1976)}]{GeJo76}
+\textsc{Gerber, H.~U.} \bbland{} \textsc{D.~Jones}. 1976, \enquote{Some
+  practical considerations in connection with the calculation of stop-loss
+  premiums}, \emph{Transaction of the Society of Actuary}, \bblvol{}~28,
+  \bblpp{} 215--231.
+
+\bibitem[{\textsc{Goffard} \bbletal{}(2015{\natexlab{a}})\textsc{Goffard},
+  \textsc{Loisel} \bbland{} \textsc{Pommeret}}]{GoLoPo15b}
+\textsc{Goffard, P.}, \textsc{S.~Loisel} \bbland{} \textsc{D.~Pommeret}.
+  2015{\natexlab{a}}, \enquote{Polynomial approximations for bivariate
+  aggregate claim amount probability distributions}, \emph{Working Paper}.
+
+\bibitem[{\textsc{Goffard} \bbletal{}(2015{\natexlab{b}})\textsc{Goffard},
+  \textsc{Loisel} \bbland{} \textsc{Pommeret}}]{GoLoPo15a}
+\textsc{Goffard, P.}, \textsc{S.~Loisel} \bbland{} \textsc{D.~Pommeret}.
+  2015{\natexlab{b}}, \enquote{A polynomial expansion to approximate the
+  ultimate ruin probability in the compound poisson ruin model},
+  \emph{WorkingPaper}.
+
+\bibitem[{\textsc{Goovaerts} \bbland{} \textsc{Vylder}(1984)}]{GoVy84}
+\textsc{Goovaerts, M.} \bbland{} \textsc{F.~D. Vylder}. 1984, \enquote{A stable
+  recursive algorithm for evaluation of ultimate ruin probabilities},
+  \emph{Astin Bulletin}, \bblvol{}~14, \bblno{}~1, \bblpp{} 53--59.
+
+\bibitem[{\textsc{Grandell}(1991)}]{Gr91}
+\textsc{Grandell, J.} 1991, \emph{Aspects of risk theory}, Springer.
+
+\bibitem[{\textsc{Grandell}(2000)}]{Gr00}
+\textsc{Grandell, J.} 2000, \enquote{Simple approximations of ruin
+  probabilities}, \emph{Insurance: Mathematics and Economics}, \bblvol{}~26,
+  \bblno{}~2, \bblpp{} 157--173.
+
+\bibitem[{\textsc{Gr{\"u}bel} \bbland{} \textsc{Hermesmeier}(1999)}]{GrHe99}
+\textsc{Gr{\"u}bel, R.} \bbland{} \textsc{R.~Hermesmeier}. 1999,
+  \enquote{Computation of compound distributions i: Aliasing errors and
+  exponential tilting}, \emph{Astin Bulletin}, \bblvol{}~29, \bblno{}~2,
+  \bblpp{} 197--214.
+
+\bibitem[{\textsc{Gzyl} \bbletal{}(2013)\textsc{Gzyl}, \textsc{Novi-Inverardi}
+  \bbland{} \textsc{Tagliani}}]{GzNITa13}
+\textsc{Gzyl, H.}, \textsc{P.~Novi-Inverardi} \bbland{} \textsc{A.~Tagliani}.
+  2013, \enquote{Determination of the probability of ultimate ruin probability
+  by maximum entropy applied to fractional moments}, \emph{Insurance:
+  Mathematics and Economics}, \bblvol{}~53, \bblno{}~2, \bblpp{} 457--463.
+
+\bibitem[{\textsc{Gzyl} \bbland{} \textsc{Tagliani}(2010)}]{GzTa10}
+\textsc{Gzyl, H.} \bbland{} \textsc{A.~Tagliani}. 2010, \enquote{Hausdorff
+  moment problem and fractionnal moments}, \emph{Applied Mathematics and
+  Computation}, \bblvol{} 216, \bblno{}~11, \bblpp{} 3319--3328.
+
+\bibitem[{\textsc{Gzyl} \bbland{} \textsc{Tagliani}(2012)}]{GzTa12}
+\textsc{Gzyl, H.} \bbland{} \textsc{A.~Tagliani}. 2012, \enquote{Determination
+  of the distribution of total loss from the fractional moments of its
+  exponential}, \emph{Applied Mathematics and Computation}, \bblvol{} 219,
+  \bblno{}~4, \bblpp{} 2124--2133.
+
+\bibitem[{\textsc{Heckman} \bbland{} \textsc{Meyers}(1983)}]{HeMe83}
+\textsc{Heckman, P.~E.} \bbland{} \textsc{G.~G. Meyers}. 1983, \enquote{The
+  calculation of aggregate loss distributions from claims severity and claims
+  count distributions}, \emph{Proceedings of the Casualty Actuarial Society},
+  \bblvol{}~70, \bblpp{} 133--134.
+
+\bibitem[{\textsc{Hesselager}(1996)}]{He96}
+\textsc{Hesselager, O.} 1996, \enquote{Recursions for certain bivariate
+  counting distributions and their compound distributions}, \emph{Astin
+  Bulletin}, \bblvol{}~26, \bblno{}~1, \bblpp{} 35--52.
+
+\bibitem[{\textsc{Hipp}(1985)}]{Hi85}
+\textsc{Hipp, C.} 1985, \enquote{Approximation of aggregate claims
+  distributions by compound poisson distributions}, \emph{Insurance:
+  Mathematics and Economics}, \bblvol{}~4, \bblno{}~4, \bblpp{} 227--232.
+
+\bibitem[{\textsc{Hipp}(1986)}]{Hi86}
+\textsc{Hipp, C.} 1986, \enquote{Improved approximations for the aggregate
+  claims distribution in the individual model}, \emph{Astin Bulletin},
+  \bblvol{}~16, \bblno{}~2, \bblpp{} 89--100.
+
+\bibitem[{\textsc{Jin} \bbletal{}()\textsc{Jin}, \textsc{Provost} \bbland{}
+  \textsc{Ren}}]{PrJi12}
+\textsc{Jin, T.}, \textsc{S.~B. Provost} \bbland{} \textsc{J.~Ren}.
+  \enquote{Moment-based density approximations for aggregate losse}, .
+
+\bibitem[{\textsc{Jin} \bbletal{}(2014)\textsc{Jin}, \textsc{Provost} \bbland{}
+  \textsc{Ren}}]{JiPrRe14}
+\textsc{Jin, T.}, \textsc{S.~B. Provost} \bbland{} \textsc{J.~Ren}. 2014,
+  \enquote{Moment-based density approximations for aggregate losses},
+  \emph{Scandinavian Actuarial Journal}, \bblvol{} (ahead-of-print), \bblpp{}
+  1--30.
+
+\bibitem[{\textsc{Jin} \bbland{} \textsc{Ren}(2010)}]{JiRe10}
+\textsc{Jin, T.} \bbland{} \textsc{J.~Ren}. 2010, \enquote{Recursions and fast
+  fourier transforms for certain bivariate compound distributions},
+  \emph{Journal of Operational Risk}, , \bblno{}~4, \bblp{}~19.
+
+\bibitem[{\textsc{Jin} \bbland{} \textsc{Ren}(2014)}]{JiRe14}
+\textsc{Jin, T.} \bbland{} \textsc{J.~Ren}. 2014, \enquote{Recursions and fast
+  fourier transforms for a new bivariate aggregate claims model},
+  \emph{Scandinavian Actuarial Journal}, , \bblno{}~8, \bblpp{} 729--752.
+
+\bibitem[{\textsc{Kaas} \bbletal{}(2008)\textsc{Kaas}, \textsc{Goovaerts},
+  \textsc{Dhaene} \bbland{} \textsc{Denuit}}]{KaGoDhDe08}
+\textsc{Kaas, R.}, \textsc{M.~Goovaerts}, \textsc{J.~Dhaene} \bbland{}
+  \textsc{M.~Denuit}. 2008, \emph{Modern actuarial risk theory: using R},
+  \bblvol{} 128, Springer Science and Business Media.
+
+\bibitem[{\textsc{Kapur} \bbland{} \textsc{Kesavan}(1992)}]{KaKe92}
+\textsc{Kapur, J.~N.} \bbland{} \textsc{H.~K. Kesavan}. 1992, \enquote{Entropy
+  optimization principles with applications}, \emph{Academic Press}.
+
+\bibitem[{\textsc{Katz}(1965)}]{Ka65}
+\textsc{Katz, L.} 1965, \enquote{Unified treatment of a broad class of discrete
+  probability distribution}, \emph{Classical and contagious discrete
+  distributions}, \bblvol{}~1, \bblpp{} 175--182.
+
+\bibitem[{\textsc{Klugman} \bbletal{}(2012)\textsc{Klugman}, \textsc{Panjer}
+  \bbland{} \textsc{Willmot}}]{KlPaWi12}
+\textsc{Klugman, S.~A.}, \textsc{H.~H. Panjer} \bbland{} \textsc{G.~E.
+  Willmot}. 2012, \emph{Loss models: From data to decision}, \bblvol{} 715,
+  John Wiley and sons.
+
+\bibitem[{\textsc{Kornya}(1983)}]{Ko83}
+\textsc{Kornya, P.~S.} 1983, \enquote{Distribution of aggregate claims in the
+  individual risk theory, model}, \emph{Transaction of the Society of Actuary}.
+
+\bibitem[{\textsc{Li} \bbland{} \textsc{Melnikov}(2014)}]{LiMe14}
+\textsc{Li, H.} \bbland{} \textsc{A.~Melnikov}. 2014, \enquote{Polynomial
+  extensions of distributions and their applications in actuarial and financial
+  modeling}, \emph{Insurance: Mathematics and Economics}, \bblvol{}~55,
+  \bblpp{} 250--260.
+
+\bibitem[{\textsc{Mnatsakanov} \bbland{} \textsc{Ruymgaart}(2003)}]{MnRu03}
+\textsc{Mnatsakanov, R.} \bbland{} \textsc{F.~H. Ruymgaart}. 2003,
+  \enquote{Some properties of moment empirical cdf's with application to some
+  inverse estimation problem}, \emph{Mathematical Methods of Statistics},
+  \bblvol{}~12, \bblno{}~4, \bblpp{} 478--495.
+
+\bibitem[{\textsc{Mnatsakanov}(2008{\natexlab{a}})}]{Mn08b}
+\textsc{Mnatsakanov, R.~M.} 2008{\natexlab{a}}, \enquote{Hausdorff moment
+  problem: Reconstruction of probability density functions}, \emph{Statistics
+  and Probability Letters}, \bblvol{}~78, \bblno{}~13, \bblpp{} 1869--1877.
+
+\bibitem[{\textsc{Mnatsakanov}(2008{\natexlab{b}})}]{Mn08a}
+\textsc{Mnatsakanov, R.~M.} 2008{\natexlab{b}}, \enquote{Hausdorff moment
+  problem: Reconstruction of probability distribution}, \emph{Statistics and
+  Probability Letters}, \bblvol{}~78, \bblno{}~12, \bblpp{} 1612--1618.
+
+\bibitem[{\textsc{Mnatsakanov}(2011)}]{Mn11}
+\textsc{Mnatsakanov, R.~M.} 2011, \enquote{Moment-recovered approximations of
+  multivariate distributions: The {L}aplace transform inversion},
+  \emph{Statistics and Probability Letters}, \bblvol{}~81, \bblno{}~1, \bblpp{}
+  1--7.
+
+\bibitem[{\textsc{Mnatsakanov} \bbland{} \textsc{Sarkisian}(2013)}]{MnSa13}
+\textsc{Mnatsakanov, R.~M.} \bbland{} \textsc{K.~Sarkisian}. 2013, \enquote{A
+  note on recovering the distribution from exponential moments}, \emph{Applied
+  Mathematics and Computation}, \bblvol{} 219, \bblpp{} 8730--8737.
+
+\bibitem[{\textsc{Mnatsakanov} \bbletal{}(2014)\textsc{Mnatsakanov},
+  \textsc{Sarkisian} \bbland{} \textsc{Hakobyan}}]{MnSaHa14}
+\textsc{Mnatsakanov, R.~M.}, \textsc{K.~Sarkisian} \bbland{}
+  \textsc{A.~Hakobyan}. 2014, \enquote{Approximation of the ruin probability
+  using the scaled {L}aplace transform inversion}, \emph{Working Paper}.
+
+\bibitem[{\textsc{Panjer}(1981)}]{Pa81}
+\textsc{Panjer, H.~H.} 1981, \enquote{Recursive evaluation of a family of
+  compound distributions}, \emph{Astin Bulletin}, \bblvol{}~12, \bblno{}~1,
+  \bblpp{} 22--26.
+
+\bibitem[{\textsc{Panjer} \bbland{} \textsc{Lutek}(1983)}]{PaLu83}
+\textsc{Panjer, H.~H.} \bbland{} \textsc{B.~W. Lutek}. 1983, \enquote{Practical
+  aspects of stop-loss calculations}, \emph{Insurance: Mathematics and
+  Economics}, \bblvol{}~2, \bblno{}~3, \bblpp{} 159--177.
+
+\bibitem[{\textsc{Panjer} \bbland{} \textsc{Willmot}(1992)}]{PaWi92}
+\textsc{Panjer, H.~H.} \bbland{} \textsc{G.~E. Willmot}. 1992, \emph{Insurance
+  risk models}, Society of Actuaries.
+
+\bibitem[{\textsc{Picard} \bbland{} \textsc{Lef{\`e}vre}(1997)}]{PiLe97}
+\textsc{Picard, P.} \bbland{} \textsc{C.~Lef{\`e}vre}. 1997, \enquote{The
+  probability of ruin in finite time with discrete claim size distribution},
+  \emph{Scandinavian Actuarial Journal}, \bblpp{} 58--69.
+
+\bibitem[{\textsc{Pommeret}(2001)}]{Po01}
+\textsc{Pommeret, D.} 2001, \enquote{Orthogonal and pseudo-orthogonal
+  multi-dimensional {A}ppell polynomials}, \emph{Applied Mathematics and
+  Computation}, \bblvol{} 117, \bblno{}~2, \bblpp{} 285--299.
+
+\bibitem[{\textsc{Pril}(1985)}]{DP85}
+\textsc{Pril, N.~D.} 1985, \enquote{Recursions for convolutions of arithmetic
+  distributions}, \emph{Astin Bulletin}, \bblvol{}~15, \bblno{}~2, \bblpp{}
+  135--139.
+
+\bibitem[{\textsc{Pril}(1986)}]{DP86b}
+\textsc{Pril, N.~D.} 1986, \enquote{On the exact computation of the aggregate
+  claims distribution in the individual life model}, \emph{Astin Bulletin},
+  \bblvol{}~16, \bblno{}~02, \bblpp{} 109--112.
+
+\bibitem[{\textsc{Provost}(2005)}]{Pr05}
+\textsc{Provost, S.~B.} 2005, \enquote{Moment-based density approximants},
+  \emph{Mathematica Journal}, \bblvol{}~9, \bblno{}~4, \bblpp{} 727--756.
+
+\bibitem[{\textsc{Ramsay}(1992)}]{Ra92}
+\textsc{Ramsay, C.} 1992, \enquote{A practical algorithm for approximating the
+  probability of ruin}, \emph{Transaction of Society of Actuaries},
+  \bblvol{}~44, \bblpp{} 443--461.
+
+\bibitem[{\textsc{Ren}(2012)}]{Re12}
+\textsc{Ren, J.} 2012, \enquote{A multivariate aggregate loss model},
+  \emph{Insurance: Mathematics and Economics}, \bblvol{}~51, \bblno{}~2,
+  \bblpp{} 402--408.
+
+\bibitem[{\textsc{Rolski} \bbletal{}(1999)\textsc{Rolski}, \textsc{Schmidli},
+  \textsc{Schmidt} \bbland{} \textsc{J.Teugels}}]{RoScScTe99}
+\textsc{Rolski, T.}, \textsc{H.~Schmidli}, \textsc{V.~Schmidt} \bbland{}
+  \textsc{J.Teugels}. 1999, \emph{Stochastic Processes for Insurance and
+  Finance}, Wiley series in probability and statistics.
+
+\bibitem[{\textsc{Ruillere} \bbland{} \textsc{Loisel}(2004)}]{RuLo04}
+\textsc{Ruillere, D.} \bbland{} \textsc{S.~Loisel}. 2004, \enquote{Another look
+  at the {P}icard-{L}ef{\`e}vre formula for finite-time ruin probability},
+  \emph{Insurance: Mathematics and Economics}, \bblvol{}~35, \bblno{}~2,
+  \bblpp{} 187--203.
+
+\bibitem[{\textsc{Str{\"o}ter}(1985)}]{St85}
+\textsc{Str{\"o}ter, B.} 1985, \enquote{The numerical evaluation of the
+  aggregate clim density function via integral equations}, \emph{Bl{\"a}ter der
+  DGVFM}, \bblvol{}~17, \bblno{}~1, \bblpp{} 1--14.
+
+\bibitem[{\textsc{Sundt}(1992)}]{Su92}
+\textsc{Sundt, B.} 1992, \enquote{On some extensions of panjer's class of
+  counting distributions}, \emph{Astin Bulletin}, \bblvol{}~22, \bblno{}~1,
+  \bblpp{} 61--80.
+
+\bibitem[{\textsc{Sundt}(1999)}]{Su99}
+\textsc{Sundt, B.} 1999, \enquote{On multivariate {P}anjer recursions},
+  \emph{Astin Bulletin}, \bblvol{}~29, \bblno{}~1, \bblpp{} 29--45.
+
+\bibitem[{\textsc{Sundt}(2000)}]{Su00}
+\textsc{Sundt, B.} 2000, \enquote{On multivariate {V}ernic recursions},
+  \emph{Astin Bulletin}, \bblvol{}~30, \bblno{}~1, \bblpp{} 111--122.
+
+\bibitem[{\textsc{Sundt}(2002)}]{Su02}
+\textsc{Sundt, B.} 2002, \enquote{Recursive evaluation of a aggregate claims
+  distributions}, \emph{Insurance: Mathematics and Economics}, \bblvol{}~30,
+  \bblno{}~3, \bblpp{} 297--322.
+
+\bibitem[{\textsc{Sundt} \bbland{} \textsc{Jewell}(1981)}]{SuJe81}
+\textsc{Sundt, B.} \bbland{} \textsc{W.~S. Jewell}. 1981, \enquote{Further
+  results on recursive evaluation of compound distributions}, \emph{Astin
+  Bulletin}, \bblvol{}~12, \bblno{}~1, \bblpp{} 27--39.
+
+\bibitem[{\textsc{Taylor}(1978)}]{Ta78}
+\textsc{Taylor, G.} 1978, \enquote{Representation and explicit calculation of
+  finite-time ruin probabilities}, \emph{Scandinavian Actuarial Journal},
+  \bblpp{} 1--18.
+
+\bibitem[{\textsc{Vernic}(1999)}]{Ve99}
+\textsc{Vernic, R.} 1999, \enquote{Recursive evaluation of some bivariate
+  compound distibutions}, \emph{Astin Bulletin}.
+
+\bibitem[{\textsc{Vilar}(2000)}]{Vi00}
+\textsc{Vilar, J.~L.} 2000, \enquote{Arithmetization of distributions and
+  linear goal programming}, \emph{Insurance: Mathematics and Economics},
+  \bblvol{}~1, \bblno{}~27, \bblpp{} 113--122.
+
+\bibitem[{\textsc{Walhin} \bbland{} \textsc{Paris}(1998)}]{WaPa98}
+\textsc{Walhin, J.~F.} \bbland{} \textsc{J.~Paris}. 1998, \enquote{On the use
+  of equispaced discrete distributions}, \emph{Astin Bulletin}, \bblvol{}~28,
+  \bblno{}~2, \bblpp{} 241--255.
+
+\end{thebibliography}

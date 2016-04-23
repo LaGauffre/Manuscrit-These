@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Chapitre4.aux
+The style file: francaissc.bst
+Database file #1: Chapitre4/BiblioChap4.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--there's a number but no volume in AlTeTi01
+You've used 28 entries,
+            3493 wiz_defined-function locations,
+            899 strings with 9817 characters,
+and the built_in function-call counts, 27858 in all, are:
+= -- 2998
+> -- 560
+< -- 80
++ -- 327
+- -- 169
+* -- 1681
+:= -- 2813
+add.period$ -- 56
+call.type$ -- 28
+change.case$ -- 192
+chr.to.int$ -- 29
+cite$ -- 29
+duplicate$ -- 3018
+empty$ -- 1836
+format.name$ -- 244
+if$ -- 5755
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 275
+newline$ -- 102
+num.names$ -- 112
+pop$ -- 1072
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 1684
+stack$ -- 0
+substring$ -- 1335
+swap$ -- 2516
+text.length$ -- 62
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 240
+warning$ -- 1
+while$ -- 153
+width$ -- 0
+write$ -- 320
+(There was 1 warning)

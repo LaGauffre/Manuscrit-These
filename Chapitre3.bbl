@@ -1,0 +1,115 @@
+\begin{thebibliography}{20}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Anderson} \bbland{} \textsc{Figueiredo}(1980)}]{AnFi80}
+\textsc{Anderson, G.~L.} \bbland{} \textsc{R.~J. Figueiredo}. 1980, \enquote{An
+  adaptative orthogonal-series estimator for probability density functions},
+  \emph{The Annals of Statistics}, \bblpp{} 347--376.
+
+\bibitem[{\textsc{Beran}(2000)}]{Be00}
+\textsc{Beran, R.} 2000, \enquote{React scatterplot smoothers: Superefficiency
+  through basisi economy}, \emph{Journal of the American Statistical
+  Association}, \bblvol{}~95, \bblno{} 449, \bblpp{} 155--171.
+
+\bibitem[{\textsc{Beran} \bbland{} \textsc{Dumbgen}(1998)}]{BeDu98}
+\textsc{Beran, R.} \bbland{} \textsc{L.~Dumbgen}. 1998, \enquote{Modulation
+  estimators and confidence sets}, \emph{The Annals of Statistics}, \bblpp{}
+  1826--1856.
+
+\bibitem[{\textsc{Brunk}(1978)}]{Br78}
+\textsc{Brunk, H.~D.} 1978, \enquote{Univariate densitay estimation by
+  orthogonal series}, \emph{Biometrika}, \bblvol{}~65, \bblno{}~3, \bblpp{}
+  521--528.
+
+\bibitem[{\textsc{Buckland}(1992)}]{Bu92}
+\textsc{Buckland, S.~T.} 1992, \enquote{Fitting density functions with
+  polynomials}, \emph{Applied Statistics}, \bblpp{} 63--76.
+
+\bibitem[{\textsc{Cencov}(1962)}]{Ce62}
+\textsc{Cencov, N.~N.} 1962, \enquote{Estimation of an unknown density function
+  from observations}, \emph{Dokl. Akad. Nauk, SSSR}, \bblvol{} 147, \bblpp{}
+  45--48.
+
+\bibitem[{\textsc{Diggle} \bbland{} \textsc{Hall}(1986)}]{DiHa86}
+\textsc{Diggle, P.} \bbland{} \textsc{P.~Hall}. 1986, \enquote{The selection of
+  terms in an orthogonal series density estimator}, \emph{Journal of the
+  American Statistical Association}, \bblvol{}~81, \bblno{} 393, \bblpp{}
+  230--233.
+
+\bibitem[{\textsc{Efromovich}(1999)}]{Ef99}
+\textsc{Efromovich, S.} 1999, \emph{Nonparametric curve estimation: methods,
+  theory and applications}, Springer Science and Business Media.
+
+\bibitem[{\textsc{Greblicki} \bbland{} \textsc{Pawlak}(1984)}]{GrPa84}
+\textsc{Greblicki, W.} \bbland{} \textsc{M.~Pawlak}. 1984, \enquote{Hermite
+  series estimates of a probability density and its derivatives}, \emph{Journal
+  of Multivariate Analysis}, \bblvol{}~15, \bblno{}~2, \bblpp{} 174--182.
+
+\bibitem[{\textsc{Hall}(1980)}]{Ha80}
+\textsc{Hall, P.} 1980, \enquote{Estimating a density on the positive half line
+  by the method of orthogonal series}, \emph{Annals of the institute of
+  Statistical Mathematics}, \bblvol{}~32, \bblno{}~1, \bblpp{} 351--362.
+
+\bibitem[{\textsc{Hjort} \bbland{} \textsc{Glad}(1995)}]{HjGl95}
+\textsc{Hjort, N.~L.} \bbland{} \textsc{I.~K. Glad}. 1995,
+  \enquote{Nonparametric density estimation with a parametric start}, \emph{The
+  Annals of Statistics}, \bblpp{} 882--904.
+
+\bibitem[{\textsc{Kronmal} \bbland{} \textsc{Tarter}(1968)}]{KrTa68}
+\textsc{Kronmal, R.} \bbland{} \textsc{M.~Tarter}. 1968, \enquote{The
+  estimation of probabiliy densities and cumulatives by fourier series
+  methods}, \emph{Journal of the American Statistical Association}, \bblpp{}
+  925--952.
+
+\bibitem[{\textsc{Provost} \bbland{} \textsc{Jiang}(2012)}]{PrJi12}
+\textsc{Provost, S.} \bbland{} \textsc{M.~Jiang}. 2012, \enquote{Orthogonal
+  polynomial density estimates: Alternative representation and degree
+  selection}, \emph{International Journal of Computational and Mathematical
+  Sciences}, \bblvol{}~6, \bblpp{} 12--29.
+
+\bibitem[{\textsc{Robertson} \bbletal{}(1988)\textsc{Robertson},
+  \textsc{Wright} \bbland{} \textsc{Dykstra}}]{RoWrDy88}
+\textsc{Robertson, T.}, \textsc{F.~T. Wright} \bbland{} \textsc{R.~L. Dykstra}.
+  1988, \emph{Order restricted statistical inference}, Wiley, New York.
+
+\bibitem[{\textsc{Schwartz}(1967)}]{Sc67}
+\textsc{Schwartz, S.} 1967, \enquote{Estimation of probability density by an
+  orthogonal series}, \emph{The Annals of Mathematical Statistics}, \bblpp{}
+  1261--1265.
+
+\bibitem[{\textsc{Stein}(1981)}]{St81}
+\textsc{Stein, C.~M.} 1981, \enquote{Estimation of the mean of a multivariate
+  normal distribution.}, \emph{The Annals of Statistics}, \bblpp{} 1135--1151.
+
+\bibitem[{\textsc{Walter}(1977)}]{Wa77}
+\textsc{Walter, G.} 1977, \enquote{Properties of hermite series estimation of
+  probability density}, \emph{The Annals of Statistics}, \bblpp{} 1258--1264.
+
+\bibitem[{\textsc{Wasserman}(2006)}]{Wa06}
+\textsc{Wasserman, L.} 2006, \emph{All of nonparametric statistics}, Springer.
+
+\bibitem[{\textsc{Watson}(1969)}]{Wa69}
+\textsc{Watson, G.~S.} 1969, \enquote{Density estimation by othogonal series},
+  \emph{The Annals of Statistics}, \bblpp{} 1496--1498.
+
+\bibitem[{\textsc{Whittle}(1958)}]{Wh58}
+\textsc{Whittle, P.} 1958, \enquote{On the smoothing of probability density
+  functions}, \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, \bblpp{} 334--343.
+
+\end{thebibliography}

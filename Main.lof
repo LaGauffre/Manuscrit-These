@@ -1,0 +1,64 @@
+\select@language {french}
+\gdef \the@ipfilectr {@-1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Les distributions compos\IeC {\'e}es et la th\IeC {\'e}orie de la ruine}{7}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \'Evolution des processus de richesse et d'exc\IeC {\'e}dent de sinistres au cours du temps.\relax }}{27}{figure.caption.12}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Approximation de la densit\IeC {\'e} de probabilit\IeC {\'e} via une repr\IeC {\'e}sentation polynomiale}{39}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Erreur relative de l'approximation polynomiale, avec diff\IeC {\'e}rentes param\IeC {\'e}trisations, de la densit\IeC {\'e} de probabilit\IeC {\'e} d'une distribution $\left [\mathcal {P}(4),\Gamma (1,2)\right ]$.\relax }}{63}{figure.caption.20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Erreur relative de l'approximation polynomiale, avec diff\IeC {\'e}rentes param\IeC {\'e}trisations, de la \gls {fds} d'une distribution $\left [\mathcal {P}(4),\Gamma (1,2)\right ]$.\relax }}{63}{figure.caption.21}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Erreur relative de l'approximation polynomiale de la \gls {fds} d'une distribution $\left [\mathcal {P}(4),\Gamma (1,1/2)\right ]$ avec diff\IeC {\'e}rentes m\IeC {\'e}thodes.\relax }}{66}{figure.caption.24}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Approximation polynomiale de la densit\IeC {\'e} d\IeC {\'e}faillante, de la \gls {fds}, de la \gls {fdr} et de la prime \textit {stop-loss} usuelle pour une distribution $\left [\mathcal {P}(4),\Gamma (1,2)\right ]$.\relax }}{67}{figure.caption.27}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Erreur relative de l'approximation polynomiale, avec diff\IeC {\'e}rentes param\IeC {\'e}trisations, de la densit\IeC {\'e} de probabilit\IeC {\'e} d'une distribution $\left [\mathcal {P}(2),\Gamma (3,1)\right ]$.\relax }}{70}{figure.caption.29}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Erreur relative de l'approximation polynomiale, avec diff\IeC {\'e}rentes param\IeC {\'e}trisations, de la \gls {fds} d'une distribution $\left [\mathcal {P}(2),\Gamma (3,1)\right ]$.\relax }}{70}{figure.caption.30}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Erreur relative de l'{}approximation polynomiale de la \gls {fds} d'une distribution $\left [\mathcal {P}(2),\Gamma (3,1)\right ]$ suivant diff\IeC {\'e}rentes m\IeC {\'e}thodes num\IeC {\'e}riques.\relax }}{72}{figure.caption.33}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Approximation polynomiale de la densit\IeC {\'e} d\IeC {\'e}faillante, de la \gls {fds}, de la \gls {fdr} et de la prime \textit {stop-loss} usuelle pour une distribution $\left [\mathcal {P}(2),\Gamma (3,1)\right ]$.\relax }}{74}{figure.caption.36}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Erreur relative de l'approximation polynomiale, avec diff\IeC {\'e}rentes param\IeC {\'e}trisations, de la \gls {fds} d'une distribution $\left [\mathcal {P}(3),\mathcal {U}(0,10)\right ]$ par rapport \IeC {\`a} m\IeC {\'e}thode d'{}inversion num\IeC {\'e}rique de la transform\IeC {\'e}e de Fourier.\relax }}{76}{figure.caption.38}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Erreur relative, en $\%$, sur la \gls {fds} d'une distribution $\left [\mathcal {P}(2),\mathcal {U}(0,10)\right ]$ suivant la m\IeC {\'e}thode num\IeC {\'e}rique utilis\IeC {\'e}e.\relax }}{78}{figure.caption.41}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Approximation polynomiale de la densit\IeC {\'e} d\IeC {\'e}faillante, de la \gls {fds}, de la \gls {fdr} et de la prime \textit {stop-loss} usuelle pour une distribution $\left [\mathcal {P}(3),\mathcal {U}(0,10)\right ]$.\relax }}{79}{figure.caption.44}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{A polynomial expansion to approximate ruin probability in the compound Poisson ruin model}{93}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Difference between exact and polynomial approximations of ruin probabilities for $\Gamma (2,1)$-distributed claim sizes using different parametrizations and an order of truncation $K=40$.\relax }}{107}{figure.caption.49}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Difference between exact and approximated ruin probabilities for $\Gamma (2,1)$-distributed claim sizes.\relax }}{108}{figure.caption.50}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Difference between exact and approximated ruin probabilities for $\Gamma (3,1)$-distributed claim sizes.\relax }}{110}{figure.caption.52}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Relative error and ruin probabilities for $U\left (0,100\right )$-distributed claim sizes }}{111}{figure.caption.54}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Polynomial approximations for bivariate aggregate claims amount probability distributions}{115}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Error map for the joint PDF of a $DBVE(1/2,2,1/4)$ distribution approximated by polynomial expansion\relax }}{128}{figure.caption.58}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Error map for the joint PDF of a $DBVE(1/2,2,1/4)$ distribution approximated by the moment-recovered method\relax }}{129}{figure.caption.59}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Error map for the joint survival function of a $MOBVE(1/2,2,1)$ distribution approximated by polynomial expansion.\relax }}{131}{figure.caption.61}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Error map for the joint survival function of a $MOBVE(1/2,2,1)$ distribution approximated by the moment recovered method.\relax }}{131}{figure.caption.62}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Discrete error map for the joint survival function of compound $NEG-BIN(1,3/4)$ $DBVE(1,1,1/4)$ distribution\relax }}{133}{figure.caption.63}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Joint survival function of compound $NEG-BIN(1,3/4)$ $DBVE(1,1,1/4)$ distribution with an order of truncation equal to $10$\relax }}{133}{figure.caption.64}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Error map for the joint survival function of $(S_{1},S_{2})$ obtained by polynomial expansion\relax }}{135}{figure.caption.65}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Joint density and survival function of the aggregate claims in the two insurance portfolios\relax }}{135}{figure.caption.66}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Survival function of the reinsurance cost obtained by polynomial expansion (blue) and Monte-Carlo simulations (red); Difference between the survival function obtained with Monte Carlo and the one obtained by polynomial expansion\relax }}{136}{figure.caption.67}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Is it optimal to group policyholders by age, gender, and seniority for BEL computations based on model points?}{139}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Lapse rate curve depending on the seniority of contracts in a saving contract portfolio\relax }}{145}{figure.caption.70}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Error on the BEL evaluation depending on the number of model points and the aggregation method\relax }}{150}{figure.caption.76}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces WWCI evolution depending on the number of clusters\relax }}{151}{figure.caption.77}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Partitionning quality indicators variations depending on the number of clusters\relax }}{152}{figure.caption.79}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Portfolio visualization through its trajectories of surrender\relax }}{152}{figure.caption.80}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Expected present value of surrender during the projection\relax }}{153}{figure.caption.81}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-9}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-10}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\gdef \the@ipfilectr {}

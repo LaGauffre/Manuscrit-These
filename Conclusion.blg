@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Conclusion.aux
+The style file: francaissc.bst
+Database file #1: BiblioGlobale.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--can't use both volume and number fields in AbSt72
+Warning--missing publisher in AbSt72
+Warning--there's a number but no volume in AlTeTi01
+Warning--can't use both author and editor fields in BeLo14
+Warning--there's a number but no volume in Bu84
+Warning--there's a number but no volume in DP86a
+Warning--there's a number but no volume in DV78
+Warning--there's a number but no volume in DhSu98
+Warning--there's a number but no volume in DhWiSu99
+Warning--empty year in PrJi12
+Warning--empty journal in PrJi12
+Warning--there's a number but no volume in JiRe10
+Warning--there's a number but no volume in JiRe14
+You've used 89 entries,
+            3493 wiz_defined-function locations,
+            1235 strings with 16707 characters,
+and the built_in function-call counts, 86162 in all, are:
+= -- 9248
+> -- 1687
+< -- 261
++ -- 999
+- -- 502
+* -- 5200
+:= -- 8755
+add.period$ -- 178
+call.type$ -- 89
+change.case$ -- 604
+chr.to.int$ -- 96
+cite$ -- 102
+duplicate$ -- 9334
+empty$ -- 5736
+format.name$ -- 748
+if$ -- 17816
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 854
+newline$ -- 285
+num.names$ -- 356
+pop$ -- 3122
+preamble$ -- 1
+purify$ -- 523
+quote$ -- 0
+skip$ -- 5365
+stack$ -- 0
+substring$ -- 4124
+swap$ -- 7737
+text.length$ -- 193
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 771
+warning$ -- 13
+while$ -- 481
+width$ -- 0
+write$ -- 978
+(There were 13 warnings)

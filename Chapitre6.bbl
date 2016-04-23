@@ -1,0 +1,137 @@
+\begin{thebibliography}{22}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Asmussen} \bbland{} \textsc{Abrecher}(2010)}]{AsAl10}
+\textsc{Asmussen, S.} \bbland{} \textsc{H.~Abrecher}. 2010, \emph{Ruin
+  probabilities}, \bblvol{}~14, World scientific.
+
+\bibitem[{\textsc{Bonnin} \bbletal{}(2014)\textsc{Bonnin}, \textsc{Planchet}
+  \bbland{} \textsc{Julliard}}]{BoPlJu12}
+\textsc{Bonnin, F.}, \textsc{F.~Planchet} \bbland{} \textsc{M.~Julliard}. 2014,
+  \enquote{Best estimate calculations of saving contracts by closed formulas:
+  {A}pplication to the {O}{R}{S}{A}}, \emph{European Actuarial Journal},
+  \bblvol{}~4, \bblno{}~1, \bblpp{} 181--196.
+
+\bibitem[{\textsc{Calinsky} \bbland{} \textsc{Harabasz}(1974)}]{CaHa74}
+\textsc{Calinsky, R.~B.} \bbland{} \textsc{J.~Harabasz}. 1974, \enquote{A
+  dendrite method for cluster analysis}, \emph{Communications in Statistics},
+  \bblvol{}~3, \bblpp{} 1--27.
+
+\bibitem[{\textsc{Chauvigny} \bbletal{}(2011)\textsc{Chauvigny},
+  \textsc{Devineau}, \textsc{Loisel} \bbland{}
+  \textsc{Maume-Deschamps}}]{ChDeLoMD11}
+\textsc{Chauvigny, M.}, \textsc{L.~Devineau}, \textsc{S.~Loisel} \bbland{}
+  \textsc{V.~Maume-Deschamps}. 2011, \enquote{Fast remote but not extreme
+  quantiles with multiple factors: {A}pplication to {S}olvency {I}{I} and
+  {E}nterprise {R}isk {M}anagement}, \emph{European Actuarial Journal},
+  \bblvol{}~1, \bblno{}~1, \bblpp{} 131--157.
+
+\bibitem[{\textsc{Devineau} \bbland{} \textsc{Chauvigny}(2011)}]{DeCh11}
+\textsc{Devineau, L.} \bbland{} \textsc{M.~Chauvigny}. 2011,
+  \enquote{Replicating portfolios: {C}alibration techniques for the calculation
+  of the {S}olvency {I}{I} economic capital}, \emph{Bulletin Fran{\c c}ais
+  d'Actuariat}, \bblvol{}~21, \bblpp{} 59--97.
+
+\bibitem[{\textsc{Devineau} \bbland{} \textsc{Loisel}(2009)}]{DeLo09}
+\textsc{Devineau, L.} \bbland{} \textsc{S.~Loisel}. 2009, \enquote{Construction
+  d'un algorithme d'acc{\'e}l{\'e}ration de la m{\'e}thode des "simulations
+  dans les simulations " pour le calcul du capital {\'e}conomique
+  {S}olvabilit{\'e} {I}{I}}, \emph{Bulletin Fran{\c c}ais d'Actuariat},
+  \bblvol{}~10, \bblno{}~17, \bblpp{} 188--221.
+
+\bibitem[{\textsc{EIOPA}(2010)}]{EIOPA}
+\textsc{EIOPA}. 2010, \enquote{{Q}uantitative {I}mpact {S}tudies {V}:
+  {T}echnical {S}pecifications}, \bbltechrep{}, European comission, Brussels.
+
+\bibitem[{\textsc{Everitt} \bbletal{}(1995)\textsc{Everitt}, \textsc{Landau}
+  \bbland{} \textsc{Leese}}]{EvLaLe95}
+\textsc{Everitt, B.~S.}, \textsc{S.~Landau} \bbland{} \textsc{M.~Leese}. 1995,
+  \emph{Cluster Analysis}, \bblfourtho{} \bbledn{}, A Hodder Arnold
+  Publication.
+
+\bibitem[{\textsc{Genolini} \bbland{} \textsc{Falissard}(2010)}]{GeFa10}
+\textsc{Genolini, C.} \bbland{} \textsc{B.~Falissard}. 2010,
+  \enquote{"{K}{M}{L}: {K}-means for longitudinal data"}, \emph{Computational
+  Statistics}, \bblvol{}~25, \bblno{}~2, \bblpp{} 317--328.
+
+\bibitem[{\textsc{Gerber}(1990)}]{Ge90}
+\textsc{Gerber, H.} 1990, \emph{Life insurance mathematics}, Springer-Verlag,
+  Berlin.
+
+\bibitem[{\textsc{Hartigan}(1975)}]{Ha75}
+\textsc{Hartigan, J.} 1975, \emph{Clustering Algorithms}, Wiley, New York.
+
+\bibitem[{\textsc{Hejblum} \bbletal{}(2012)\textsc{Hejblum}, \textsc{Skinner}
+  \bbland{} \textsc{Thiebaut}}]{HeSkTh12}
+\textsc{Hejblum, B.}, \textsc{J.~Skinner} \bbland{} \textsc{R.~Thiebaut}. 2012,
+  \enquote{Application of gene set analysis of time-course gene expression in a
+  hiv vaccine trial}, \emph{33rd annual conference of international society for
+  clinical biostatistics}.
+
+\bibitem[{\textsc{Jacques} \bbland{} \textsc{Preda}(2013)}]{JaPr13}
+\textsc{Jacques, J.} \bbland{} \textsc{C.~Preda}. 2013, \enquote{Functional
+  data clustering: a survey}, \emph{Adavances in data analysis and
+  classification}, \bblpp{} 1--25.
+
+\bibitem[{\textsc{Kaufman} \bbland{} \textsc{Rousseeuw}(1990)}]{KaRo90}
+\textsc{Kaufman, L.} \bbland{} \textsc{P.~J. Rousseeuw}. 1990, \emph{Finding
+  groups in Data: An introduction to cluster analysis}, Wiley, New York.
+
+\bibitem[{\textsc{Krzanowski} \bbland{} \textsc{Lai}(1988)}]{KrLa88}
+\textsc{Krzanowski, W.} \bbland{} \textsc{Y.~T. Lai}. 1988, \enquote{A
+  criterion for determining the number of groups in a data set using
+  {S}um-of-{S}quares clustering}, \emph{Biometrics}, \bblvol{}~44, \bblpp{}
+  23--34.
+
+\bibitem[{\textsc{Nagin}(1999)}]{Na99}
+\textsc{Nagin, D.~S.} 1999, \enquote{Analysing developmental trajectories: {A}
+  semiparametric group based approach}, \emph{Psychological Methods}, \bblpp{}
+  139--157.
+
+\bibitem[{\textsc{Nteukam} \bbland{} \textsc{Planchet}(2012)}]{NtPl12}
+\textsc{Nteukam, T.} \bbland{} \textsc{F.~Planchet}. 2012, \enquote{Stochastic
+  evaluation of life insurance contracts: {M}odel point on asset trajectories
+  and measurements of the error related to aggregation}, \emph{Insurance:
+  Mathematics and Economics}, \bblvol{}~51, \bblno{}~3, \bblpp{} 624--631.
+
+\bibitem[{\textsc{Petauton} \bbletal{}(2002)\textsc{Petauton}, \textsc{Kessler}
+  \bbland{} \textsc{Bellando}}]{PeKeBe02}
+\textsc{Petauton, P.}, \textsc{D.~Kessler} \bbland{} \textsc{J.~Bellando}.
+  2002, \emph{Th{\'e}orie et pratique de l'assurance vie: manuel et exercices
+  corrig{\'e}s}, Dunod.
+
+\bibitem[{\textsc{Planchet} \bbletal{}(2011)\textsc{Planchet}, \textsc{Therond}
+  \bbland{} \textsc{Juillard}}]{PlThJu11}
+\textsc{Planchet, F.}, \textsc{P.~Therond} \bbland{} \textsc{M.~Juillard}.
+  2011, \emph{Mod{\`e}les financiers en assurance. Analyses de risque
+  dynamique.}, \bblsecondo{} \bbledn{}, Economica, Paris.
+
+\bibitem[{\textsc{Sarukkali}(2013)}]{Sa13}
+\textsc{Sarukkali, M.} 2013, \emph{Replicated Stratified Sampling for
+  Sensitivity Analysis}, \bblphdthesis{}, University of Connecticut.
+
+\bibitem[{\textsc{Schrager}(2008)}]{Sc08}
+\textsc{Schrager, D.} 2008, \enquote{Replicating protfolios for insurance
+  liabilities}, \emph{AENORM}, , \bblno{}~59, \bblpp{} 57--61.
+
+\bibitem[{\textsc{Ward}(1963)}]{Wa63}
+\textsc{Ward, J.~H.} 1963, \enquote{Hierarchical grouping to optimize an
+  objective function}, \emph{Journal of the American Statistical Association},
+  \bblvol{} 236-544, \bblpp{} 236--544.
+
+\end{thebibliography}

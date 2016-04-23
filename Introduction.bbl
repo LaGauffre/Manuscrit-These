@@ -1,0 +1,38 @@
+\begin{thebibliography}{3}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{francaisbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{\textsc{Goffard} \bbland{} \textsc{Guerrault}(2015)}]{GoGu15}
+\textsc{Goffard, P.-O.} \bbland{} \textsc{X.~Guerrault}. 2015, \enquote{Is it
+  optimal to group policyholders by age, gender, and seniority for {BEL}
+  computations based on model points?}, \emph{European Actuarial Journal},
+  \bblpp{} 1--16.
+
+\bibitem[{\textsc{Goffard} \bbletal{}(2015{\natexlab{a}})\textsc{Goffard},
+  \textsc{Loisel} \bbland{} \textsc{Pommeret}}]{GoLoPo15b}
+\textsc{Goffard, P.-O.}, \textsc{S.~Loisel} \bbland{} \textsc{D.~Pommeret}.
+  2015{\natexlab{a}}, \enquote{Polynomial approximations for bivariate
+  aggregate claim amount probability distributions}, \emph{Working Paper}.
+
+\bibitem[{\textsc{Goffard} \bbletal{}(2015{\natexlab{b}})\textsc{Goffard},
+  \textsc{Loisel} \bbland{} \textsc{Pommeret}}]{GoLoPo15a}
+\textsc{Goffard, P.-O.}, \textsc{S.~Loisel} \bbland{} \textsc{D.~Pommeret}.
+  2015{\natexlab{b}}, \enquote{A polynomial expansion to approximate the
+  ultimate ruin probability in the compound {P}oisson ruin model},
+  \emph{Journal of Computational and Applied Mathematics}.
+
+\end{thebibliography}
